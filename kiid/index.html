@@ -1,0 +1,217 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      body {
+        margin: 0;
+        width: 100vw;
+        overflow-x: hidden;
+        height: 100vh;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .bg-video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+
+      .logo-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        gap: 50px;
+        margin-bottom: 240px;
+      }
+
+      .logo-wrapper {
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+        opacity: 0; /* Initially set opacity to 0 */
+        animation: fadeIn 800ms ease-in 4600ms forwards;
+
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+      }
+      .logo {
+        margin-top: 150px;
+        width: 363.75px;
+      }
+
+      .enter-btn {
+        text-align: center;
+
+        font-family: "Neue Haas Grotesk Display Pro";
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.56px;
+
+        border: none;
+        background: transparent;
+        color: black;
+        font-size: 24px;
+        padding: 12px 13px 12px 13px;
+
+        width: 120px;
+        cursor: pointer;
+      }
+
+      .footer {
+        color: var(--blueGray, #b3bacb);
+        text-align: center;
+        font-family: "Pretendard", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.16px;
+        margin-bottom: 52px;
+      }
+      /*mobile only*/
+      @media (max-width: 833px) {
+        .logo {
+          top: 50%;
+          width: 150px;
+        }
+
+        .enter-btn {
+          width: 100px;
+          font-size: 18px;
+          margin-top: 50px;
+        }
+
+        .desc {
+          font-size: 10px;
+        }
+        .footer {
+          color: var(--blueGray02, #b3bacb);
+          text-align: center;
+          font-family: "Pretendard", sans-serif;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: -0.1px;
+          margin-bottom: 40px;
+        }
+      }
+
+      /*tablet only*/
+      @media (min-width: 820px) and (max-width: 1023px) {
+        .logo {
+          top: 50%;
+          width: 300px;
+        }
+
+        .desc {
+          font-size: 10px;
+        }
+        .footer {
+          color: var(--blueGray02, #b3bacb);
+          text-align: center;
+          font-family: "Pretendard", sans-serif;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: -0.16px;
+          margin-bottom: 28px;
+        }
+      }
+    </style>
+  </head>
+  <title>2024 Kiid Post</title>
+  <meta
+    name="description"
+    content="고려대학교 산업정보디자인전공 졸업전시 2024"
+  />
+  <body style="margin: 0; width: 100vw; overflow-x: hidden">
+    <div class="container">
+      <video
+        class="bg-video"
+        muted
+        autoplay
+        loop
+        playsinline
+        style="pointer-events: none"
+      >
+        <source src="./landing_desktop.mp4" type="video/mp4" />
+      </video>
+      <div class="logo-container">
+        <div class="logo-wrapper" onclick="location.href='/2024/kiid/about'">
+          <button class="enter-btn" id="ent-btn">ENTER</button>
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="position: relative; bottom: 2px"
+          >
+            <g id="designersBtnprojectGo">
+              <rect width="26" height="26" fill="#79E1FF" />
+              <path
+                id="Vector"
+                d="M24.2667 11.3252L14.6349 4.9834L13.0849 8.03857L18.1481 11.3715H1.7334V14.6244H18.1481L13.0849 17.9574L14.6349 21.0167L24.2667 14.6707V11.3252Z"
+                fill="white"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="footer">
+        <div
+          style="
+            display: flex;
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div>고려대학교 디자인조형학부 산업정보디자인전공</div>
+          <span style="font-weight: 600">2024년도 졸업전시 </span>
+        </div>
+        <div style="text-align: center">
+          Industrial&Information Design, Korea University. Graduation Exhibiton
+          2024
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // document.getElementById("ent-btn").addEventListener("click", function () {
+    //   window.location.href = "/2024/about";
+    // });
+  </script>
+</html>
