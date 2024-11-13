@@ -11,21 +11,25 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        /* height: 100vh; */
         font-family: Arial, sans-serif;
-        margin: 0; width: 100vw; overflow-x: hidden";
+        margin: 0;
+        width: 100vw;
+        overflow-x: hidden;
+        height: 100%;
       }
 
       .countdown {
         display: none;
-
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         font-size: 2rem;
         text-align: center;
         position: relative;
+        margin-top: 20px;
       }
       .dday {
         font-family: "Neue Haas Grotesk Display Pro";
@@ -45,12 +49,15 @@
         }
       }
       .imgWrapper {
-        position: absolute;
+        position: relative;
+        bottom: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1092px;
-        height: 524px;
+        width: 100%;
+        height: 100%;
+        height: 30vmax;
+        background-position: center center;
         background-color: transparent;
         flex-direction: column;
         gap: 12px;
@@ -59,13 +66,15 @@
         background-repeat: no-repeat;
         background-size: contain;
       }
-      .header__logo {
+      .header {
         position: relative;
-        top: 50px;
+        bottom: 20px;
+      }
+      .header__logo {
         display: none;
         /* @media screen and (max-width: 834px) {
-          display: none;
-        } */
+                display: none;
+              } */
       }
       .header__logo__tablet {
         width: 84px;
@@ -75,19 +84,57 @@
         }
       }
 
+      .link {
+        display: none;
+        cursor: pointer;
+        width: 100%;
+        gap: 64px;
+        justify-content: space-between;
+      }
+      .link__anchor {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: var(--bluegray, #7a8294);
+
+        font-family: "Neue Haas Grotesk Display Pro";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.28px;
+      }
+
+      /* @media screen and (max-width: 834px) {
+        .header {
+          position: relative;
+          bottom: 100px;
+        }
+      } */
       @media screen and (max-width: 834px) {
         .imgWrapper {
           width: 100vw;
           height: 50vw;
         }
+        .header {
+          position: relative;
+          bottom: 50px;
+        }
       }
-
       @media screen and (max-width: 400px) {
+        .header {
+          position: static;
+          bottom: 0;
+        }
+        body {
+          height: auto;
+        }
         .imgWrapper {
           background-image: url("./landingImage_mobile.png");
           background-repeat: no-repeat;
           background-size: cover;
-          height: 760px;
+          max-height: 791px;
+          height: 80vh;
         }
 
         .header__logo {
@@ -98,11 +145,38 @@
           position: relative;
           /* top: 40px; */
         }
+        .link {
+          display: none;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .link__anchor {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: var(--bluegray, #7a8294);
+
+          font-family: "Neue Haas Grotesk Display Pro";
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: -0.28px;
+        }
+      }
+
+      .link {
+        display: none;
+        cursor: pointer;
+        width: 100%;
+        gap: 30px;
+        justify-content: space-between;
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <!-- <div class="container">
       <video
         class="bg-video"
         muted
@@ -113,6 +187,7 @@
         <source src="./kiid/about/2024about_EMERGENCE.mp4" type="video/mp4" />
       </video>
       <div class="logo-container"></div>
+
       <div class="footer">
         <div
           style="
@@ -131,9 +206,9 @@
           2024
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <header>
+    <header class="header">
       <svg
         class="header__logo"
         xmlns="http://www.w3.org/2000/svg"
@@ -237,6 +312,69 @@
       <div class="imgWrapper">
         <div id="dday" class="dday" style="display: flex; gap: 90px"></div>
       </div>
+
+      <div class="footer">
+        <div class="link">
+          <a class="link__anchor">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="position: relative; bottom: 2px"
+            >
+              <g id="designersBtnprojectGo">
+                <rect width="26" height="26" fill="#79E1FF" />
+                <path
+                  id="Vector"
+                  d="M24.2667 11.3252L14.6349 4.9834L13.0849 8.03857L18.1481 11.3715H1.7334V14.6244H18.1481L13.0849 17.9574L14.6349 21.0167L24.2667 14.6707V11.3252Z"
+                  fill="white"
+                />
+              </g>
+            </svg>
+            kiid instagram
+          </a>
+          <a class="link__anchor">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="position: relative; bottom: 2px"
+            >
+              <g id="designersBtnprojectGo">
+                <rect width="26" height="26" fill="#79E1FF" />
+                <path
+                  id="Vector"
+                  d="M24.2667 11.3252L14.6349 4.9834L13.0849 8.03857L18.1481 11.3715H1.7334V14.6244H18.1481L13.0849 17.9574L14.6349 21.0167L24.2667 14.6707V11.3252Z"
+                  fill="white"
+                />
+              </g>
+            </svg>
+            kufia instagram
+          </a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <div
+            style="
+              display: flex;
+              gap: 10px;
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <div>고려대학교 디자인조형학부 산업정보디자인전공</div>
+            <span style="font-weight: 600">2024년도 졸업전시 </span>
+          </div>
+          <div style="text-align: center">
+            Industrial&Information Design, Korea University. Graduation
+            Exhibiton 2024
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -268,27 +406,22 @@
         ).textContent = `${hours}시 ${minutes}분 ${seconds}초`;
       }
 
-      // 1초마다 updateCountdown 함수를 호출하여 카운트다운을 업데이트
-
-      // function onVideoEnd() {
-      //   if ($(".bg-video").prop("ended")) {
-      //     //영상종료 후 어떤행동을 할건지 작성
-      //     location.href = "/html/index/index.php";
-      //   }
-      // }
-
       function endVideo() {
         document.getElementsByClassName("countdown")[0].style.display = "flex";
         document.getElementsByClassName("header__logo")[0].style.display =
           "flex";
+        document.getElementsByClassName("link")[0].style.display = "flex";
         document.getElementsByClassName("container")[0].style.display = "none";
-        // alert("alert!");
-        // console.log("console!");
+        document.getElementsByClassName("link")[0].style.display = "flex";
         const countdownInterval = setInterval(updateCountdown, 1000);
       }
-      document
-        .getElementsByClassName("bg-video")[0]
-        .addEventListener("ended", endVideo);
+      document.getElementsByClassName("countdown")[0].style.display = "flex";
+      document.getElementsByClassName("header__logo")[0].style.display = "flex";
+      document.getElementsByClassName("link")[0].style.display = "flex";
+      const countdownInterval = setInterval(updateCountdown, 1000);
+      // document
+      //   .getElementsByClassName("bg-video")[0]
+      //   .addEventListener("ended", endVideo);
     </script>
   </body>
 </html>
