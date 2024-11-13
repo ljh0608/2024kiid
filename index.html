@@ -176,7 +176,7 @@
     </style>
   </head>
   <body>
-    <!-- <div class="container">
+    <div class="videoWrapper">
       <video
         class="bg-video"
         muted
@@ -188,7 +188,7 @@
       </video>
       <div class="logo-container"></div>
 
-      <div class="footer">
+      <!-- <div class="footer">
         <div
           style="
             display: flex;
@@ -205,8 +205,8 @@
           Industrial&Information Design, Korea University. Graduation Exhibiton
           2024
         </div>
-      </div>
-    </div> -->
+      </div> -->
+    </div>
 
     <header class="header">
       <svg
@@ -411,17 +411,18 @@
         document.getElementsByClassName("header__logo")[0].style.display =
           "flex";
         document.getElementsByClassName("link")[0].style.display = "flex";
-        document.getElementsByClassName("container")[0].style.display = "none";
+        document.getElementsByClassName("videoWrapper")[0].style.display =
+          "none";
         document.getElementsByClassName("link")[0].style.display = "flex";
         const countdownInterval = setInterval(updateCountdown, 1000);
       }
-      document.getElementsByClassName("countdown")[0].style.display = "flex";
-      document.getElementsByClassName("header__logo")[0].style.display = "flex";
-      document.getElementsByClassName("link")[0].style.display = "flex";
-      const countdownInterval = setInterval(updateCountdown, 1000);
-      // document
-      //   .getElementsByClassName("bg-video")[0]
-      //   .addEventListener("ended", endVideo);
+      // document.getElementsByClassName("countdown")[0].style.display = "flex";
+      // document.getElementsByClassName("header__logo")[0].style.display = "flex";
+      // document.getElementsByClassName("link")[0].style.display = "flex";
+      // const countdownInterval = setInterval(updateCountdown, 1000);
+      document
+        .getElementsByClassName("bg-video")[0]
+        .addEventListener("ended", endVideo);
     </script>
   </body>
 </html>
