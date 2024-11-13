@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <link rel="stylesheet" href="./index.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>고려대학교 졸업전시 카운트다운</title>
@@ -12,10 +13,11 @@
         align-items: center;
         height: 100vh;
         font-family: Arial, sans-serif;
+        margin: 0; width: 100vw; overflow-x: hidden";
       }
 
       .countdown {
-        display: flex;
+        display: none;
 
         justify-content: center;
         align-items: center;
@@ -37,6 +39,10 @@
           /* countdown 2 */
           font-size: 72px;
         }
+        @media screen and (max-width: 400px) {
+          /* countdown 2 */
+          font-size: 42px;
+        }
       }
       .imgWrapper {
         position: absolute;
@@ -45,28 +51,88 @@
         align-items: center;
         width: 1092px;
         height: 524px;
-        background-color: #e8e8e8;
+        background-color: transparent;
         flex-direction: column;
         gap: 12px;
+
+        background-image: url("./kiid/about/assets/aboutMainImage.png");
+        background-repeat: no-repeat;
+        background-size: contain;
       }
       .header__logo {
         position: relative;
         top: 50px;
-
-        @media screen and (max-width: 834px) {
+        display: none;
+        /* @media screen and (max-width: 834px) {
           display: none;
-        }
+        } */
       }
       .header__logo__tablet {
         width: 84px;
         height: 32px;
-        @media screen and (min-width: 834px) {
+        @media screen and (min-width: 400px) {
           display: none;
+        }
+      }
+
+      @media screen and (max-width: 834px) {
+        .imgWrapper {
+          width: 100vw;
+          height: 50vw;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .imgWrapper {
+          background-image: url("./landingImage_mobile.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 760px;
+        }
+
+        .header__logo {
+          width: 120px;
+          height: 74px;
+        }
+        .dday {
+          position: relative;
+          /* top: 40px; */
         }
       }
     </style>
   </head>
   <body>
+    <div class="container">
+      <video
+        class="bg-video"
+        muted
+        autoplay
+        playsinline
+        style="pointer-events: none"
+      >
+        <source src="./kiid/about/2024about_EMERGENCE.mp4" type="video/mp4" />
+      </video>
+      <div class="logo-container"></div>
+      <div class="footer">
+        <div
+          style="
+            display: flex;
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div>고려대학교 디자인조형학부 산업정보디자인전공</div>
+          <span style="font-weight: 600">2024년도 졸업전시 </span>
+        </div>
+        <div style="text-align: center">
+          Industrial&Information Design, Korea University. Graduation Exhibiton
+          2024
+        </div>
+      </div>
+    </div>
+
     <header>
       <svg
         class="header__logo"
@@ -169,103 +235,6 @@
 
     <div class="countdown" id="countdown">
       <div class="imgWrapper">
-        <svg
-          class="header__logo__tablet"
-          xmlns="http://www.w3.org/2000/svg"
-          width="163"
-          height="64"
-          viewBox="0 0 163 64"
-          fill="none"
-        >
-          <g clip-path="url(#clip0_355_2640)">
-            <path
-              d="M144.727 62.83V48.098H148.439V33.8447H152.151V30.1348H162.403V34.3234H152.641V44.3926H160.059V48.5767H148.93V58.6459H160.059V62.83H144.727Z"
-              fill="black"
-            />
-            <path
-              d="M0.402344 33.5005V18.7684H4.11366V4.51514H7.82498V0.803711H18.0768V4.99384H8.31702V15.0615H15.7351V19.2471H4.6057V29.3148H15.7351V33.5005H0.402344Z"
-              fill="black"
-            />
-            <path
-              d="M46.623 33.5005V18.7684H50.3344V4.51514H54.0457V0.803711H64.2976V4.99384H54.5362V15.0615H61.9558V19.2471H50.8249V29.3148H61.9558V33.5005H46.623Z"
-              fill="black"
-            />
-            <path
-              d="M110.639 30.1633L117.982 62.8196H114.709L110.467 43.9723L109.688 44.0606V62.8196H105.72V30.1543L110.639 30.1633Z"
-              fill="black"
-            />
-            <path
-              d="M122.841 30.1416H118.873V62.8219H122.841V30.1416Z"
-              fill="black"
-            />
-            <path
-              d="M78.7282 20.3128L77.5881 18.3487L75.6185 17.2162H70.9171V27.9062H66.9492V0.799805H76.652L80.4624 2.99584L82.6646 6.80002V11.1921L80.3274 15.2237L82.6646 19.2552V27.9062H78.7282V20.3143V20.3128ZM70.9006 13.2191H75.602L77.5716 12.0867L78.7117 10.1225V7.85316L77.5716 5.88899L75.602 4.75656H70.9006V13.2251V13.2206V13.2191Z"
-              fill="black"
-            />
-            <path
-              d="M85.3159 62.83V48.098H89.0287V33.8447H92.74V30.1348H102.99V34.3234H93.2306V44.3926H100.649V48.5767H89.5193V58.6459H100.649V62.83H85.3159Z"
-              fill="black"
-            />
-            <path
-              d="M72.6034 63.1999L68.7915 61.0039L66.5894 57.2042V35.7584L68.7915 31.9572L72.6034 29.7627H77.0062L80.8226 31.9572L83.0203 35.7584V39.3831H79.0509V36.7891L77.9153 34.8235L75.9457 33.691H73.6685L71.6988 34.8235L70.5587 36.7891V39.3831V39.775V43.5388V43.9352V56.1735L71.6988 58.1377L73.6685 59.2701H75.9457L77.9153 58.1377L79.0509 56.1735V47.5045H75.8571V43.9307H83.0203V57.2042L80.8226 61.0039L77.0062 63.1999H72.6034Z"
-              fill="black"
-            />
-            <path
-              d="M39.1844 33.4913V14.7502L38.4044 14.6619L34.177 33.4689H30.0426L25.8138 14.6619L25.0352 14.7502V33.4913H21.0674V0.8125H25.9713L31.7243 26.3811H32.4939L38.2468 0.8125H43.1523V33.4913H39.1844Z"
-              fill="black"
-            />
-            <path
-              d="M131.583 63.1999L127.773 61.0039L125.571 57.2042V35.7584L127.773 31.9572L131.583 29.7627H135.988L139.803 31.9572L142 35.7584V39.3831H138.032V36.7891L136.897 34.8235L134.926 33.691H132.65L130.679 34.8235L129.539 36.7891V39.3831V39.775V43.5388V43.9352V56.1735L130.679 58.1377L132.65 59.2701H134.926L136.897 58.1377L138.032 56.1735V50.5742H142V57.2042L139.803 61.0039L135.988 63.1999H131.583Z"
-              fill="black"
-            />
-            <path
-              d="M162.404 19.3975H118.873V27.9049H162.404V19.3975Z"
-              fill="black"
-            />
-            <path
-              d="M147.576 22.9905L149.718 27.0445H148.776L146.938 23.559L145.681 24.6884L145.224 27.043H144.385L145.699 20.2529H146.538L145.881 23.6053L149.556 20.2529H150.623L147.576 22.9875V22.9905Z"
-              fill="white"
-            />
-            <path
-              d="M151.899 20.2568H152.737L151.423 27.0469H150.584L151.899 20.2568Z"
-              fill="white"
-            />
-            <path
-              d="M154.273 20.2568H155.111L153.797 27.0469H152.958L154.273 20.2568Z"
-              fill="white"
-            />
-            <path
-              d="M156.624 20.2554H158.757C160.595 20.2554 161.452 21.319 161.452 22.9616C161.452 25.1651 160.203 27.044 157.757 27.044H155.31L156.624 20.2539V20.2554ZM157.737 26.305C159.68 26.305 160.585 24.8524 160.585 23.0199C160.585 21.7857 160.052 20.9884 158.709 20.9884H157.319L156.29 26.3065H157.737V26.305Z"
-              fill="white"
-            />
-            <path
-              d="M144.179 15.5953C145.064 15.0642 145.675 14.7411 145.675 13.7912C145.675 12.9175 145.122 12.4044 144.266 12.4044C143.808 12.4044 143.438 12.5466 143.18 12.8218C142.923 13.106 142.779 13.5054 142.77 14.1038H142.142C142.142 13.3723 142.352 12.8413 142.722 12.4703C143.112 12.0813 143.684 11.8809 144.303 11.8809C145.532 11.8809 146.303 12.6976 146.303 13.7702C146.303 15.0717 145.37 15.5265 144.408 16.0964C143.657 16.5422 142.827 17.0463 142.694 17.9484H146.218V18.5183H141.99C142.019 16.8474 143.151 16.2116 144.18 15.5938L144.179 15.5953Z"
-              fill="black"
-            />
-            <path
-              d="M147.235 15.2638C147.235 13.156 148.177 11.874 149.654 11.874C151.13 11.874 152.063 13.1366 152.063 15.2638C152.063 17.391 151.206 18.6536 149.645 18.6536C148.083 18.6536 147.235 17.3342 147.235 15.2638ZM151.425 15.2638C151.425 13.5166 150.806 12.3961 149.654 12.3961C148.501 12.3961 147.873 13.4792 147.873 15.2638C147.873 17.0485 148.492 18.1226 149.654 18.1226C150.815 18.1226 151.425 17.05 151.425 15.2638Z"
-              fill="black"
-            />
-            <path
-              d="M155.112 15.5953C155.997 15.0642 156.608 14.7411 156.608 13.7912C156.608 12.9175 156.056 12.4044 155.199 12.4044C154.741 12.4044 154.371 12.5466 154.113 12.8218C153.856 13.106 153.712 13.5054 153.703 14.1038H153.075C153.075 13.3723 153.285 12.8413 153.655 12.4703C154.045 12.0813 154.617 11.8809 155.237 11.8809C156.465 11.8809 157.236 12.6976 157.236 13.7702C157.236 15.0717 156.303 15.5265 155.342 16.0964C154.59 16.5422 153.76 17.0463 153.627 17.9484H157.151V18.5183H152.923C152.952 16.8474 154.084 16.2116 155.114 15.5938L155.112 15.5953Z"
-              fill="black"
-            />
-            <path
-              d="M160.794 16.8589H157.748V16.2889L160.88 11.9492H161.394V16.3458H162.404V16.8589H161.394V18.5209H160.794V16.8589ZM160.794 16.3458V12.9844H160.775L158.366 16.3174V16.3458H160.794Z"
-              fill="black"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_355_2640">
-              <rect
-                width="162"
-                height="62.4001"
-                fill="white"
-                transform="translate(0.399902 0.799805)"
-              />
-            </clipPath>
-          </defs>
-        </svg>
         <div id="dday" class="dday" style="display: flex; gap: 90px"></div>
       </div>
     </div>
@@ -300,7 +269,26 @@
       }
 
       // 1초마다 updateCountdown 함수를 호출하여 카운트다운을 업데이트
-      const countdownInterval = setInterval(updateCountdown, 1000);
+
+      // function onVideoEnd() {
+      //   if ($(".bg-video").prop("ended")) {
+      //     //영상종료 후 어떤행동을 할건지 작성
+      //     location.href = "/html/index/index.php";
+      //   }
+      // }
+
+      function endVideo() {
+        document.getElementsByClassName("countdown")[0].style.display = "flex";
+        document.getElementsByClassName("header__logo")[0].style.display =
+          "flex";
+        document.getElementsByClassName("container")[0].style.display = "none";
+        // alert("alert!");
+        // console.log("console!");
+        const countdownInterval = setInterval(updateCountdown, 1000);
+      }
+      document
+        .getElementsByClassName("bg-video")[0]
+        .addEventListener("ended", endVideo);
     </script>
   </body>
 </html>
