@@ -35,7 +35,7 @@
       justify-content: center;
     "
   >
-    <div class="gnb-container">
+    <!-- <div class="gnb-container">
       <a class="logo-wrapper" href="/2024/kiid/about">
         <img class="gnb-logo" src="./../about/assets/mainLogoX3.png" />
       </a>
@@ -64,18 +64,246 @@
         <div class="hamburger" id="hamburger">
           <div class="hamburger-button">
             <svg
-              width="14"
-              height="14"
+              width="22"
+              height="20"
               viewBox="0 0 14 14"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="14" height="2" fill="#ffffff" />
-              <rect y="6" width="14" height="2" fill="#ffffff" />
-              <rect y="12" width="14" height="2" fill="#ffffff" />
+              <rect width="14" height="2" fill="#000000" />
+              <rect y="6" width="14" height="2" fill="#000000" />
+              <rect y="12" width="14" height="2" fill="#000000" />
             </svg>
           </div>
         </div>
+        <div class="slideIn --hidden" id="gnb-slideIn">
+          <div class="hamburger-button --close" id="closeBtn">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.07118 5.65683L1.41435 0L0.000139594 1.41421L5.65697 7.07104L0 12.728L1.41421 14.1422L7.07118 8.48526L12.7281 14.1421L14.1423 12.7279L8.4854 7.07104L14.1421 1.41431L12.7279 9.29832e-05L7.07118 5.65683Z"
+                fill="#ffffff"
+              />
+            </svg>
+          </div>
+          <div class="slideIn-contents">
+            <a
+              class="anchor --side"
+              href="/2024/kiid/about"
+              style="font-size: 36px"
+            >
+              ABOUT
+            </a>
+            <div
+              class="anchor --side"
+              id="slideIn-projects"
+              style="font-size: 36px"
+            >
+              PROJECTS
+              <a
+                class="subanchor subanchor__marginTop --folded"
+                href="/2024/kiid/pd"
+                >PRODUCT DEVELOPMENT</a
+              >
+              <a
+                class="subanchor subanchor__marginTop --folded"
+                href="/2024/kiid/psd"
+                >PRODUCT SYSTEM DESIGN</a
+              >
+            </div>
+            <a
+              class="anchor --side"
+              href="/2024/kiid/designers"
+              style="font-size: 36px"
+            >
+              DESIGNERS
+            </a>
+          </div>
+          <div class="side-ref">
+            <div style="display: flex">
+              <a class="anchor_block --ref" href="http://kiid.korea.ac.kr">
+                KIID GRADSHOW
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div style="display: flex">
+              <a class="--ref anchor_block" href="https://url.kr/j9grtp">
+                INSTAGRAM
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+          
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="gnb-container">
+        <a class="logo-wrapper" href="/2024/kiid/about">
+            <img class="gnb-logo" src="./../about/assets/mainLogoX3.png" />
+        </a>
+        <div class="navigator --desktop">
+          <a class="anchor --active" href="/2024/kiid/about">ABOUT</a>
+          <div id="projects-menu" class="projects-menu">
+            <a class="anchor" id="projects">PROJECTS</a>
+            <div class="dropdown --hidden" id="projects-dropdown">
+              <div class="project-subAnchor-container">
+                <a class="subanchor" href="/2024/kiid/pd">PRODUCT DEVELOPMENT</a
+                ><br />
+              </div>
+              <div class="project-subAnchor-container">
+                <a class="subanchor" href="/2024/kiid/psd"
+                  >PRODUCT SYSTEM DESIGN</a
+                >
+              </div>
+            </div>
+          </div>
+          <a class="anchor" href="/2024/kiid/designers">DESIGNERS</a>
+        </div>
+        <div class="navigator --tablet --mobile">
+          <div class="hamburger" id="hamburger">
+            <div class="hamburger-button">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="14" height="2" fill="#000000" />
+                <rect y="6" width="14" height="2" fill="#000000" />
+                <rect y="12" width="14" height="2" fill="#000000" />
+              </svg>
+            </div>
+          </div>
+          <div class="slideIn --hidden" id="gnb-slideIn">
+            <div class="hamburger-button --close" id="closeBtn">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.07118 5.65683L1.41435 0L0.000139594 1.41421L5.65697 7.07104L0 12.728L1.41421 14.1422L7.07118 8.48526L12.7281 14.1421L14.1423 12.7279L8.4854 7.07104L14.1421 1.41431L12.7279 9.29832e-05L7.07118 5.65683Z"
+                  fill="#ffffff"
+                />
+              </svg>
+            </div>
+            <div class="slideIn-contents">
+              <a
+                class="anchor --side"
+                href="/2024/kiid/about"
+                style="font-size: 36px"
+              >
+                ABOUT
+              </a>
+              <div
+                class="anchor --side"
+                id="slideIn-projects"
+                style="font-size: 36px"
+              >
+                PROJECTS
+                <a
+                  class="subanchor subanchor__marginTop --folded"
+                  href="/2024/kiid/pd"
+                  >PRODUCT DEVELOPMENT</a
+                >
+                <a
+                  class="subanchor subanchor__marginTop --folded"
+                  href="/2024/kiid/psd"
+                  >PRODUCT SYSTEM DESIGN</a
+                >
+              </div>
+              <a
+                class="anchor --side"
+                href="/2024/kiid/designers"
+                style="font-size: 36px"
+              >
+                DESIGNERS
+              </a>
+            </div>
+            <div class="side-ref">
+              <div style="display: flex">
+                <a class="anchor_block --ref" href="http://kiid.korea.ac.kr">
+                  KIID GRADSHOW
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div style="display: flex">
+                <a class="--ref anchor_block" href="https://url.kr/j9grtp">
+                  INSTAGRAM
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+                <!-- <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                    fill="black"
+                  />
+                </svg> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
         <div class="slideIn --hidden" id="gnb-slideIn">
           <div class="hamburger-button --close" id="closeBtn">
             <svg
@@ -138,6 +366,8 @@
           </div>
         </div>
       </div>
+
+      
     </div>
 
     <div class="container" id="container">

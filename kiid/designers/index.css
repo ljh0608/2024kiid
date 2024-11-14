@@ -112,7 +112,7 @@ a {
   }
 
   .inner-container {
-    width: 60%;
+    width: 65%;
   }
 
   .logo {
@@ -158,9 +158,9 @@ a {
   }
 
   .name {
-    color: var(--White, #fff);
+    color: var(--White, #000);
     font-family: "Pretendard", sans-serif;
-    font-size: 17px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -168,7 +168,7 @@ a {
   }
 
   .name-eng {
-    color: var(--White, #fff);
+    color: var(--White, #000);
     font-family: "Pretendard", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -184,7 +184,7 @@ a {
   }
 
   .pjt-name {
-    color: var(--White, #fff);
+    color: var(--White, #000);
     font-family: "Pretendard", sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -231,9 +231,7 @@ a {
   }
 
   .name {
-    color: var(--White, #fff);
-    font-family: "Pretendard", sans-serif;
-    font-size: 14px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -241,9 +239,7 @@ a {
   }
 
   .name-eng {
-    color: var(--White, #fff);
-    font-family: "Pretendard", sans-serif;
-    font-size: 13px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -266,6 +262,6 @@ a {
   }
 
   .email {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
