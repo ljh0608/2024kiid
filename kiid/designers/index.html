@@ -1,11 +1,13 @@
 <html lang="ko">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title content="2023년도 졸업전시 | 고려대학교 산업정보디자인"></title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
+    />
 
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./_gnb.css" />
@@ -13,1107 +15,897 @@
     <link rel="stylesheet" href="./_common.css" />
     <script src="./index.js"></script>
     <script src="./_gnb.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap");
     </style>
-</head>
+  </head>
 
-<body style="margin: 0; width: 100vw; overflow-x: hidden; display: flex; justify-content: center; ">
+  <body
+    style="
+      margin: 0;
+      width: 100vw;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+    "
+  >
     <div class="gnb-container">
-        <a class="logo-wrapper" href="/2024/kiid/about">
-            <img class="gnb-logo" src="./../about/assets/mainLogoX3.png" />
-        </a>
-        <div class="navigator --desktop">
-            <a class="anchor " href="/2024/kiid/about">ABOUT</a>
-            <div id="projects-menu" class="projects-menu ">
-                <a class="anchor" id="projects">PROJECTS</a>
-                <div class="dropdown --hidden" id="projects-dropdown">
-                    <div class="project-subAnchor-container">
-                        <img class="pointer --transparent" src="arrow.png" />
-                        <a class="subanchor" href="/2024/kiid/pd">PRODUCT DEVELOPMENT</a>
-                        <br />
-
-                    </div>
-                    <div class="project-subAnchor-container">
-                        <img class="pointer --transparent" src="arrow.png" /><a class="subanchor"
-                            href="/2024/kiid/psd">PRODUCT
-                            SYSTEM
-                            DESIGN</a>
-                    </div>
-                </div>
+      <a class="logo-wrapper" href="/2024/kiid/about">
+        <img class="gnb-logo" src="./../about/assets/mainLogoX3.png" />
+      </a>
+      <div class="navigator --desktop">
+        <a class="anchor" href="/2024/kiid/about">ABOUT</a>
+        <div id="projects-menu" class="projects-menu">
+          <a class="anchor" id="projects">PROJECTS</a>
+          <div class="dropdown --hidden" id="projects-dropdown">
+            <div class="project-subAnchor-container">
+              <img class="pointer --transparent" src="arrow.png" />
+              <a class="subanchor" href="/2024/kiid/pd">PRODUCT DEVELOPMENT</a>
+              <br />
             </div>
-            <a class=" anchor --active " href="/2024/kiid/designers">DESIGNERS</a>
+            <div class="project-subAnchor-container">
+              <img class="pointer --transparent" src="arrow.png" /><a
+                class="subanchor"
+                href="/2024/kiid/psd"
+                >PRODUCT SYSTEM DESIGN</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="navigator --tablet --mobile">
-            <div class="hamburger" id="hamburger">
-                <div class="hamburger-button">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="14" height="2" fill="#ffffff" />
-                        <rect y="6" width="14" height="2" fill="#ffffff" />
-                        <rect y="12" width="14" height="2" fill="#ffffff" />
-                    </svg>
-                </div>
-            </div>
-            <div class="slideIn --hidden" id="gnb-slideIn">
-                <div class="hamburger-button --close" id="closeBtn">
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M7.07118 5.65683L1.41435 0L0.000139594 1.41421L5.65697 7.07104L0 12.728L1.41421 14.1422L7.07118 8.48526L12.7281 14.1421L14.1423 12.7279L8.4854 7.07104L14.1421 1.41431L12.7279 9.29832e-05L7.07118 5.65683Z"
-                            fill="#ffffff" />
-                    </svg>
-                </div>
-                <div class="slideIn-contents">
-                    <a class="anchor --active" href="/2023/about" style="font-size: 36px;">
-                        ABOUT
-                    </a>
-                    <div class="anchor --active" id="slideIn-projects" style="font-size: 36px;">
-                        PROJECTS
-                        <a class="subanchor --folded" href="/2023/pd">PRODUCT DEVELOPMENT</a>
-                        <a class="subanchor --folded" href="/2023/psd">PRODUCT SYSTEM DESIGN</a>
-                    </div>
-                    <a class="anchor --active" href="/2023/designers" style="font-size: 36px;">
-                        DESIGNERS
-                    </a>
-                    <div class="side-ref">
-                        <div style="display: flex;">
-                            <a class="anchor --ref" href="http://kiid.korea.ac.kr"> KIID GRADSHOW </a>
-                            <img class="arrow-rotate" src="arrow.png">
-                        </div>
-                        <div style="display: flex;">
-                            <a class="anchor --ref" href="https://url.kr/j9grtp"> INSTAGRAM </a>
-                            <img class="arrow-rotate" src="arrow.png">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <a class="anchor --active" href="/2024/kiid/designers">DESIGNERS</a>
+      </div>
+      <div class="navigator --tablet --mobile">
+        <div class="hamburger" id="hamburger">
+          <div class="hamburger-button">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="14" height="2" fill="#ffffff" />
+              <rect y="6" width="14" height="2" fill="#ffffff" />
+              <rect y="12" width="14" height="2" fill="#ffffff" />
+            </svg>
+          </div>
         </div>
+        <div class="slideIn --hidden" id="gnb-slideIn">
+          <div class="hamburger-button --close" id="closeBtn">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.07118 5.65683L1.41435 0L0.000139594 1.41421L5.65697 7.07104L0 12.728L1.41421 14.1422L7.07118 8.48526L12.7281 14.1421L14.1423 12.7279L8.4854 7.07104L14.1421 1.41431L12.7279 9.29832e-05L7.07118 5.65683Z"
+                fill="#ffffff"
+              />
+            </svg>
+          </div>
+          <div class="slideIn-contents">
+            <a
+              class="anchor --active"
+              href="/2023/about"
+              style="font-size: 36px"
+            >
+              ABOUT
+            </a>
+            <div
+              class="anchor --active"
+              id="slideIn-projects"
+              style="font-size: 36px"
+            >
+              PROJECTS
+              <a class="subanchor --folded" href="/2023/pd"
+                >PRODUCT DEVELOPMENT</a
+              >
+              <a class="subanchor --folded" href="/2023/psd"
+                >PRODUCT SYSTEM DESIGN</a
+              >
+            </div>
+            <a
+              class="anchor --active"
+              href="/2023/designers"
+              style="font-size: 36px"
+            >
+              DESIGNERS
+            </a>
+            <div class="side-ref">
+              <div style="display: flex">
+                <a class="anchor --ref" href="http://kiid.korea.ac.kr">
+                  KIID GRADSHOW
+                </a>
+                <img class="arrow-rotate" src="arrow.png" />
+              </div>
+              <div style="display: flex">
+                <a class="anchor --ref" href="https://url.kr/j9grtp">
+                  INSTAGRAM
+                </a>
+                <img class="arrow-rotate" src="arrow.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container" id="container">
-        <!-- <img class="logo" src="./title.png" alt="members profile" style="z-index: 0;"/> -->
-        <div class="inner-container" style="z-index: 1;">
+      <!-- <img class="logo" src="./title.png" alt="members profile" style="z-index: 0;"/> -->
+      <div class="inner-container" style="z-index: 1">
+        <!-- <img class="logo --tablet --mobile" src="./tablet.png" alt="members profile"/> -->
 
-            <!-- <img class="logo --tablet --mobile" src="./tablet.png" alt="members profile"/> -->
-
-            <div class="grid">
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김경민.png" alt="Gyeongmin Kim " />
-                    </div>
-                    <div class="nameWrapper">
-                        <div class="name">김경민</div>
-                        <div class="name-eng">Gyeongmin Kim</div>
-                    </div>
-                    <div class="email">
-                        kgminne@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/CarbonSense">
-                            Marion
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/EcoPowerCamp">
-                            Glide
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김리나.png" alt="Lina" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김리나</div>
-                        <div class="name-eng">Lina Kim</div>
-                    </div>
-                    <div class="email">
-                        yeppilina@naver.com
-                    </div>
-                    <div class="pjt" href="/2023/pd/project/Careeator">
-                        <a class="pjt-name">
-                            SAY YES
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Newtrition_Lab">
-                            Lookie
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김민영.png" alt="Minyeong" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김민영</div>
-                        <div class="name-eng">Kim Minyeong
-                        </div>
-                    </div>
-                    <div class="email">
-                        als00501@naver.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/flux">
-                            Plouf
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/by_me">
-                            OF.U
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김소연.png" alt="Soyeon" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김소연</div>
-                        <div class="name-eng">Soyeon Kim</div>
-                    </div>
-                    <div class="email">
-                        uoehos@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/campo">
-                            Plouf
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Dewy">
-                            OF.U
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김수아.png" alt="Sooah" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김수아</div>
-                        <div class="name-eng">Sooah Kim</div>
-                    </div>
-                    <div class="email">
-                        sooweeboowee@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/flux">
-                            SLOYD
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/by_me">
-                            LOUMOU
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src=./김수연.png alt="Sooyeon" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김수연</div>
-                        <div class="name-eng">Sooyeon Kim</div>
-                    </div>
-                    <div class="email">
-                        endendtndus2@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/flux">
-                            LOOF
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/by_me">
-                            ViiM 
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김승연.png" alt="SeungYeon" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김승연</div>
-                        <div class="name-eng">SeungYeon Kim</div>
-                    </div>
-                    <div class="email">
-                        kims63256@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/LG_Cell">
-                            SAY YES
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Soiree">
-                            Lookie
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src=./김연우.png alt="Yeonwoo" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김연우</div>
-                        <div class="name-eng">Yeonwoo Kim</div>
-                    </div>
-                    <div class="email">
-                        kywgd6390@naver.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Careeator">
-                            LOUMOU
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Newtrition_Lab">
-                            SLOYD
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김유미.png" alt="Yumi " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김유미</div>
-                        <div class="name-eng">Yumi Kim</div>
-                    </div>
-                    <div class="email">
-                        0301yumi@naver.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/After">
-                            REPs
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/IERT">
-                            oasis
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김은세.png" alt="Eunse Kim" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김은세</div>
-                        <div class="name-eng">Eunse Kim</div>
-                    </div>
-                    <div class="email">
-                        eunsekim514@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/titto">
-                            서시
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/palette">
-                            Bapl
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김주현.png" alt="Joohyun Kim" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김주현</div>
-                        <div class="name-eng">Joohyun Kim</div>
-                    </div>
-                    <div class="email">
-                        moon-stone@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Pinit">
-                            REPs
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Kideuk">
-                            oasis
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김중원.png" alt="Joungwon Kim" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김중원</div>
-                        <div class="name-eng">Joungwon Kim</div>
-                    </div>
-                    <div class="email">
-                        kimjw7570@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/dooda">
-                            Plouf
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/PUME">
-                            OF.U
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김지윤.png" alt="Jiyoon Kim" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김지윤</div>
-                        <div class="name-eng">Jiyoon Kim</div>
-                    </div>
-                    <div class="email">
-                        kjy00331@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/NOVA">
-                            LOOF
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Arex">
-                            VIIM
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./김지은.png" alt="Jieun Kim" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">김지은</div>
-                        <div class="name-eng">Jieun Kim</div>
-                    </div>
-                    <div class="email">
-                        your@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/BITE">
-                            CampMorph
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/ADDED">
-                            Witch
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="박서현.png" alt="Seohyun " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">박서현</div>
-                        <div class="name-eng">Seohyun Park</div>
-                    </div>
-                    <div class="email">
-                        eau0522@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/CarbonSense">
-                            서시
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/EcoPowerCamp">
-                            Bapl
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./박예진.png" alt="Yejin" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">박예진</div>
-                        <div class="name-eng">Yejin Park</div>
-                    </div>
-                    <div class="email">
-                        pyj1523@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/together_run">
-                            Phrase
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/PlantPlanet">
-                            Leafle
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./빌군.png" alt="Bilguun" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">빌군</div>
-                        <div class="name-eng">Bilguun E.</div>
-                    </div>
-                    <div class="email">
-                        e.bilguun106@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/LG_Cell">
-                            Troi
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Soiree">
-                            FARO
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./서채원.png" alt="Chaewon" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">서채원</div>
-                        <div class="name-eng">Chaewon Seo</div>
-                    </div>
-                    <div class="email">
-                        codnjs4206@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/campo">
-                            Troi
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Dewy">
-                            도로시
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./심서연.png" alt="Seoyeon" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">심서연</div>
-                        <div class="name-eng">Seoyeon Shim</div>
-                    </div>
-                    <div class="email">
-                        shimseoyeon01@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/BITE">
-                            SAY YES
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/ADDED">
-                            LOOKIE
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="./영창문.png" alt="Changmun" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">영창문</div>
-                        <div class="name-eng">Changmun Yeong</div>
-                    </div>
-                    <div class="email">
-                        yeongcw726@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            REPs
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            oasis
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="유옥현.png" alt="Okhyun" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">유옥현</div>
-                        <div class="name-eng">Okhyun You</div>
-                    </div>
-                    <div class="email">
-                        uij6574@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/LG_Cell">
-                            NiHIL
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Soiree">
-                            Hannip
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="유지오.png" alt="Zio" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">유지오</div>
-                        <div class="name-eng">Zio Yoo</div>
-                    </div>
-                    <div class="email">
-                        zioy00@naver.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/After">
-                            Camp Morph
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/IERT">
-                            Witch
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="윤총명.png" alt="Chongmyeong" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">윤총명</div>
-                        <div class="name-eng">Chongmyeong Yoon</div>
-                    </div>
-                    <div class="email">
-                        ychm0822@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/campo">
-                            Nihil
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Dewy">
-                            Hanip
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="이다연.png" alt="Dayeon" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">이다연</div>
-                        <div class="name-eng">Dayeon Lee</div>
-                    </div>
-                    <div class="email">
-                        dayeon76@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/together_run">
-                            MERZ
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/PlantPlanet">
-                            Slowork
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="이동현.png" alt="Donghyeon" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">이동현</div>
-                        <div class="name-eng">Donghyeon Lee</div>
-                    </div>
-                    <div class="email">
-                        lsgr2999@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Pinit">
-                            Troi
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Kideuk">
-                            도로시
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="이민지.png" alt="Minji" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">이민지</div>
-                        <div class="name-eng">Minji Lee</div>
-                    </div>
-                    <div class="email">
-                        love2500674@naver.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/dooda">
-                            MERZ
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/PUME">
-                            Slowork
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="이세리.png" alt="Seri " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">이세리</div>
-                        <div class="name-eng">Seri Lee</div>
-                    </div>
-                    <div class="email">
-                        eetpfl@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/titto">
-                            meald
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/palette">
-                            FRING
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="이수민.png" alt="Sumin" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">이수민</div>
-                        <div class="name-eng">Sumin Lee</div>
-                    </div>
-                    <div class="email">
-                        ssilneedle@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/together_run">
-                            Troi
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/PlantPlanet">
-                            도로시
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="이윤정.png" alt="Yunjung Lee" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">이윤정</div>
-                        <div class="name-eng">Yunjung Lee</div>
-                    </div>
-                    <div class="email">
-                        dbswjd0126@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/mnevo">
-                            LOOF
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Rhysom">
-                            VIIM
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="이인서.png" alt="Inseo Lee" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">이인서</div>
-                        <div class="name-eng">Inseo Lee</div>
-                    </div>
-                    <div class="email">
-                        longsocks01@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/mnevo">
-                            MERZ
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Rhysom">
-                            SLOWORK
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="이정현.png" alt="Junghyun " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">이정현</div>
-                        <div class="name-eng">Junghyun Lee</div>
-                    </div>
-                    <div class="email">
-                        jhshjh140178@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/BITE">
-                            Ho Lamp
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/ADDED">
-                            WEB
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="이현서.png" alt="Hyunseo " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">이현서</div>
-                        <div class="name-eng">Hyunseo Lee</div>
-                    </div>
-                    <div class="email">
-                        audreylhs@naver.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/After">
-                            SLOYD
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/IERT">
-                            LOUMOU
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="장가혜.png" alt="Zhang" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">장가혜</div>
-                        <div class="name-eng">Zhang Jiahui</div>
-                    </div>
-                    <div class="email">
-                        zjh384946876@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Pinit">
-                            Reps
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Kideuk">
-                            Skin AI
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="장세영.png" alt="Seyoung " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">장세영</div>
-                        <div class="name-eng">Seyoung Jang</div>
-                    </div>
-                    <div class="email">
-                        syjang9868@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/NOVA">
-                            Men's Accessories
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/Arex">
-                            Haru
-                        </a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="장은정.png" alt="Eunjung " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">장은정</div>
-                        <div class="name-eng">Eunjung Chang</div>
-                    </div>
-                    <div class="email">
-                        jej00516@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Meald
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            Fring
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="정승연.png" alt="Seungyeon " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">정승연</div>
-                        <div class="name-eng">Seungyeon Jung</div>
-                    </div>
-                    <div class="email">
-                        syeonniverse@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            NiHIL
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            Hannip
-                        </a>
-                    </div>
-                </div>
-
-
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="정승재.png" alt=" Seungjae" />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">정승재</div>
-                        <div class="name-eng">Seungjae Jeong</div>
-                    </div>
-                    <div class="email">
-                        seoz3021@gmail.com
-                    </div>
-                    <div class="pjt">       
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Men’s Accessories
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            Haru
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="정지수.png" alt="Jisoo " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">정지수</div>
-                        <div class="name-eng">Jisoo Jeong</div>
-                    </div>
-                    <div class="email">
-                        jisoo02121212@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Ho Lamp
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            WEB
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="정지원.png" alt="Jiwon " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">정지원</div>
-                        <div class="name-eng">Jiwon Jung</div>
-                    </div>
-                    <div class="email">
-                        gggg3776@naver.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Galpi
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            ownR
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="정지윤.png" alt="Jiyoong " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">정지윤</div>
-                        <div class="name-eng">Jiyoong Jeong</div>
-                    </div>
-                    <div class="email">
-                        wjdwldbs00714@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Phrase
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            Leafle
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="정혜지.png" alt="Hyeji " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">정혜지</div>
-                        <div class="name-eng">Hyeji Jeong</div>
-                    </div>
-                    <div class="email">
-                        dtb1122@naver.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Phrase
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            Cleanic
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="차윤서.png" alt="Yunseo " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">차윤서</div>
-                        <div class="name-eng">Yunseo Cha</div>
-                    </div>
-                    <div class="email">
-                        ycha589@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            서시
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            Bapl
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="최예린.png" alt="Yerin " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">최예린</div>
-                        <div class="name-eng">Yerin Choi</div>
-                    </div>
-                    <div class="email">
-                        chldpfldpf@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Galpi
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            ownR
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="최종훈.png" alt="Jonghun " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">최종훈</div>
-                        <div class="name-eng">Jonghun Choi</div>
-                    </div>
-                    <div class="email">
-                        jonghun0705@gmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Two Way Bag
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            DEITI
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="_켈리.png" alt="Kelly " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">켈리</div>
-                        <div class="name-eng">Kelly K.</div>
-                    </div>
-                    <div class="email">
-                        Kellykinneging@hotmail.com
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Troi
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            FARO
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="편유진.png" alt="Yujin " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">편유진</div>
-                        <div class="name-eng">Yujin Pyun</div>
-                    </div>
-                    <div class="email">
-                        realdefyjp@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Meald
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            FRING
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="thumb-wrapper">
-                        <img class="thumb" src="한다빈.png" alt="Dabin " />
-                    </div>
-                   <div class="nameWrapper">
-                        <div class="name">한다빈</div>
-                        <div class="name-eng">Dabin Han</div>
-                    </div>
-                    <div class="email">
-                        thunderb4869@korea.ac.kr
-                    </div>
-                    <div class="pjt">
-                        <a class="pjt-name" href="/2023/pd/project/Wello">
-                            Galpi
-                        </a>
-                        <a class="pjt-name" href="/2023/psd/project/store">
-                            ownR
-                        </a>
-                    </div>
-                </div>
+        <div class="grid">
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김경민.png" alt="Gyeongmin Kim " />
             </div>
+            <div class="nameWrapper">
+              <div class="name">김경민</div>
+              <div class="name-eng">Gyeongmin Kim</div>
+            </div>
+            <div class="email">kgminne@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/CarbonSense">
+                Marion
+              </a>
+              <a class="pjt-name" href="/2023/psd/project/EcoPowerCamp">
+                Glide
+              </a>
+            </div>
+          </div>
 
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김리나.png" alt="Lina" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김리나</div>
+              <div class="name-eng">Lina Kim</div>
+            </div>
+            <div class="email">yeppilina@naver.com</div>
+            <div class="pjt" href="/2023/pd/project/Careeator">
+              <a class="pjt-name"> SAY YES </a>
+              <a class="pjt-name" href="/2023/psd/project/Newtrition_Lab">
+                Lookie
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김민영.png" alt="Minyeong" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김민영</div>
+              <div class="name-eng">Kim Minyeong</div>
+            </div>
+            <div class="email">als00501@naver.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/flux"> Plouf </a>
+              <a class="pjt-name" href="/2023/psd/project/by_me"> OF.U </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김소연.png" alt="Soyeon" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김소연</div>
+              <div class="name-eng">Soyeon Kim</div>
+            </div>
+            <div class="email">uoehos@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/campo"> Plouf </a>
+              <a class="pjt-name" href="/2023/psd/project/Dewy"> OF.U </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김수아.png" alt="Sooah" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김수아</div>
+              <div class="name-eng">Sooah Kim</div>
+            </div>
+            <div class="email">sooweeboowee@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/flux"> SLOYD </a>
+              <a class="pjt-name" href="/2023/psd/project/by_me"> LOUMOU </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src=./김수연.png alt="Sooyeon" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김수연</div>
+              <div class="name-eng">Sooyeon Kim</div>
+            </div>
+            <div class="email">endendtndus2@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/flux"> LOOF </a>
+              <a class="pjt-name" href="/2023/psd/project/by_me"> ViiM </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김승연.png" alt="SeungYeon" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김승연</div>
+              <div class="name-eng">SeungYeon Kim</div>
+            </div>
+            <div class="email">kims63256@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/LG_Cell"> SAY YES </a>
+              <a class="pjt-name" href="/2023/psd/project/Soiree"> Lookie </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src=./김연우.png alt="Yeonwoo" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김연우</div>
+              <div class="name-eng">Yeonwoo Kim</div>
+            </div>
+            <div class="email">kywgd6390@naver.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Careeator"> LOUMOU </a>
+              <a class="pjt-name" href="/2023/psd/project/Newtrition_Lab">
+                SLOYD
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김유미.png" alt="Yumi " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김유미</div>
+              <div class="name-eng">Yumi Kim</div>
+            </div>
+            <div class="email">0301yumi@naver.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/After"> REPs </a>
+              <a class="pjt-name" href="/2023/psd/project/IERT"> oasis </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김은세.png" alt="Eunse Kim" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김은세</div>
+              <div class="name-eng">Eunse Kim</div>
+            </div>
+            <div class="email">eunsekim514@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/titto"> 서시 </a>
+              <a class="pjt-name" href="/2023/psd/project/palette"> Bapl </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김주현.png" alt="Joohyun Kim" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김주현</div>
+              <div class="name-eng">Joohyun Kim</div>
+            </div>
+            <div class="email">moon-stone@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Pinit"> REPs </a>
+              <a class="pjt-name" href="/2023/psd/project/Kideuk"> oasis </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김중원.png" alt="Joungwon Kim" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김중원</div>
+              <div class="name-eng">Joungwon Kim</div>
+            </div>
+            <div class="email">kimjw7570@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/dooda"> Plouf </a>
+              <a class="pjt-name" href="/2023/psd/project/PUME"> OF.U </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김지윤.png" alt="Jiyoon Kim" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김지윤</div>
+              <div class="name-eng">Jiyoon Kim</div>
+            </div>
+            <div class="email">kjy00331@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/NOVA"> LOOF </a>
+              <a class="pjt-name" href="/2023/psd/project/Arex"> VIIM </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./김지은.png" alt="Jieun Kim" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">김지은</div>
+              <div class="name-eng">Jieun Kim</div>
+            </div>
+            <div class="email">your@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/BITE"> CampMorph </a>
+              <a class="pjt-name" href="/2023/psd/project/ADDED"> Witch </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="박서현.png" alt="Seohyun " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">박서현</div>
+              <div class="name-eng">Seohyun Park</div>
+            </div>
+            <div class="email">eau0522@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/CarbonSense"> 서시 </a>
+              <a class="pjt-name" href="/2023/psd/project/EcoPowerCamp">
+                Bapl
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./박예진.png" alt="Yejin" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">박예진</div>
+              <div class="name-eng">Yejin Park</div>
+            </div>
+            <div class="email">pyj1523@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/together_run">
+                Phrase
+              </a>
+              <a class="pjt-name" href="/2023/psd/project/PlantPlanet">
+                Leafle
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./빌군.png" alt="Bilguun" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">빌군</div>
+              <div class="name-eng">Bilguun E.</div>
+            </div>
+            <div class="email">e.bilguun106@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/LG_Cell"> Troi </a>
+              <a class="pjt-name" href="/2023/psd/project/Soiree"> FARO </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./서채원.png" alt="Chaewon" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">서채원</div>
+              <div class="name-eng">Chaewon Seo</div>
+            </div>
+            <div class="email">codnjs4206@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/campo"> Troi </a>
+              <a class="pjt-name" href="/2023/psd/project/Dewy"> 도로시 </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./심서연.png" alt="Seoyeon" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">심서연</div>
+              <div class="name-eng">Seoyeon Shim</div>
+            </div>
+            <div class="email">shimseoyeon01@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/BITE"> SAY YES </a>
+              <a class="pjt-name" href="/2023/psd/project/ADDED"> LOOKIE </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./영창문.png" alt="Changmun" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">영창문</div>
+              <div class="name-eng">Changmun Yeong</div>
+            </div>
+            <div class="email">yeongcw726@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> REPs </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> oasis </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="유옥현.png" alt="Okhyun" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">유옥현</div>
+              <div class="name-eng">Okhyun You</div>
+            </div>
+            <div class="email">uij6574@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/LG_Cell"> NiHIL </a>
+              <a class="pjt-name" href="/2023/psd/project/Soiree"> Hannip </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="유지오.png" alt="Zio" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">유지오</div>
+              <div class="name-eng">Zio Yoo</div>
+            </div>
+            <div class="email">zioy00@naver.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/After"> Camp Morph </a>
+              <a class="pjt-name" href="/2023/psd/project/IERT"> Witch </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="윤총명.png" alt="Chongmyeong" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">윤총명</div>
+              <div class="name-eng">Chongmyeong Yoon</div>
+            </div>
+            <div class="email">ychm0822@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/campo"> Nihil </a>
+              <a class="pjt-name" href="/2023/psd/project/Dewy"> Hanip </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="이다연.png" alt="Dayeon" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">이다연</div>
+              <div class="name-eng">Dayeon Lee</div>
+            </div>
+            <div class="email">dayeon76@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/together_run">
+                MERZ
+              </a>
+              <a class="pjt-name" href="/2023/psd/project/PlantPlanet">
+                Slowork
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="이동현.png" alt="Donghyeon" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">이동현</div>
+              <div class="name-eng">Donghyeon Lee</div>
+            </div>
+            <div class="email">lsgr2999@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Pinit"> Troi </a>
+              <a class="pjt-name" href="/2023/psd/project/Kideuk"> 도로시 </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="이민지.png" alt="Minji" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">이민지</div>
+              <div class="name-eng">Minji Lee</div>
+            </div>
+            <div class="email">love2500674@naver.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/dooda"> MERZ </a>
+              <a class="pjt-name" href="/2023/psd/project/PUME"> Slowork </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="이세리.png" alt="Seri " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">이세리</div>
+              <div class="name-eng">Seri Lee</div>
+            </div>
+            <div class="email">eetpfl@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/titto"> meald </a>
+              <a class="pjt-name" href="/2023/psd/project/palette"> FRING </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="이수민.png" alt="Sumin" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">이수민</div>
+              <div class="name-eng">Sumin Lee</div>
+            </div>
+            <div class="email">ssilneedle@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/together_run">
+                Troi
+              </a>
+              <a class="pjt-name" href="/2023/psd/project/PlantPlanet">
+                도로시
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="이윤정.png" alt="Yunjung Lee" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">이윤정</div>
+              <div class="name-eng">Yunjung Lee</div>
+            </div>
+            <div class="email">dbswjd0126@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/mnevo"> LOOF </a>
+              <a class="pjt-name" href="/2023/psd/project/Rhysom"> VIIM </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="이인서.png" alt="Inseo Lee" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">이인서</div>
+              <div class="name-eng">Inseo Lee</div>
+            </div>
+            <div class="email">longsocks01@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/mnevo"> MERZ </a>
+              <a class="pjt-name" href="/2023/psd/project/Rhysom"> SLOWORK </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="이정현.png" alt="Junghyun " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">이정현</div>
+              <div class="name-eng">Junghyun Lee</div>
+            </div>
+            <div class="email">jhshjh140178@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/BITE"> Ho Lamp </a>
+              <a class="pjt-name" href="/2023/psd/project/ADDED"> WEB </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="이현서.png" alt="Hyunseo " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">이현서</div>
+              <div class="name-eng">Hyunseo Lee</div>
+            </div>
+            <div class="email">audreylhs@naver.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/After"> SLOYD </a>
+              <a class="pjt-name" href="/2023/psd/project/IERT"> LOUMOU </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="장가혜.png" alt="Zhang" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">장가혜</div>
+              <div class="name-eng">Zhang Jiahui</div>
+            </div>
+            <div class="email">zjh384946876@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Pinit"> Reps </a>
+              <a class="pjt-name" href="/2023/psd/project/Kideuk"> Skin AI </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="장세영.png" alt="Seyoung " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">장세영</div>
+              <div class="name-eng">Seyoung Jang</div>
+            </div>
+            <div class="email">syjang9868@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/NOVA">
+                Men's Accessories
+              </a>
+              <a class="pjt-name" href="/2023/psd/project/Arex"> Haru </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="장은정.png" alt="Eunjung " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">장은정</div>
+              <div class="name-eng">Eunjung Chang</div>
+            </div>
+            <div class="email">jej00516@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> Meald </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> Fring </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="정승연.png" alt="Seungyeon " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">정승연</div>
+              <div class="name-eng">Seungyeon Jung</div>
+            </div>
+            <div class="email">syeonniverse@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> NiHIL </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> Hannip </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="정승재.png" alt=" Seungjae" />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">정승재</div>
+              <div class="name-eng">Seungjae Jeong</div>
+            </div>
+            <div class="email">seoz3021@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello">
+                Men’s Accessories
+              </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> Haru </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="정지수.png" alt="Jisoo " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">정지수</div>
+              <div class="name-eng">Jisoo Jeong</div>
+            </div>
+            <div class="email">jisoo02121212@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> Ho Lamp </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> WEB </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="정지원.png" alt="Jiwon " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">정지원</div>
+              <div class="name-eng">Jiwon Jung</div>
+            </div>
+            <div class="email">gggg3776@naver.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> Galpi </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> ownR </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="정지윤.png" alt="Jiyoong " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">정지윤</div>
+              <div class="name-eng">Jiyoong Jeong</div>
+            </div>
+            <div class="email">wjdwldbs00714@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> Phrase </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> Leafle </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="정혜지.png" alt="Hyeji " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">정혜지</div>
+              <div class="name-eng">Hyeji Jeong</div>
+            </div>
+            <div class="email">dtb1122@naver.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> Phrase </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> Cleanic </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="차윤서.png" alt="Yunseo " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">차윤서</div>
+              <div class="name-eng">Yunseo Cha</div>
+            </div>
+            <div class="email">ycha589@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> 서시 </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> Bapl </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="최예린.png" alt="Yerin " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">최예린</div>
+              <div class="name-eng">Yerin Choi</div>
+            </div>
+            <div class="email">chldpfldpf@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> Galpi </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> ownR </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="최종훈.png" alt="Jonghun " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">최종훈</div>
+              <div class="name-eng">Jonghun Choi</div>
+            </div>
+            <div class="email">jonghun0705@gmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello">
+                Two Way Bag
+              </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> DEITI </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="_켈리.png" alt="Kelly " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">켈리</div>
+              <div class="name-eng">Kelly K.</div>
+            </div>
+            <div class="email">Kellykinneging@hotmail.com</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> Troi </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> FARO </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="편유진.png" alt="Yujin " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">편유진</div>
+              <div class="name-eng">Yujin Pyun</div>
+            </div>
+            <div class="email">realdefyjp@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> Meald </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> FRING </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="한다빈.png" alt="Dabin " />
+            </div>
+            <div class="nameWrapper">
+              <div class="name">한다빈</div>
+              <div class="name-eng">Dabin Han</div>
+            </div>
+            <div class="email">thunderb4869@korea.ac.kr</div>
+            <div class="pjt">
+              <a class="pjt-name" href="/2023/pd/project/Wello"> Galpi </a>
+              <a class="pjt-name" href="/2023/psd/project/store"> ownR </a>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-wrapper">
-            <div class="copyright">
-                Copyright 2023. KIID POST all rights reserved.
+      <div class="footer-wrapper">
+        <ㅎdiv class="copyright"> Copyright 2023. KIID POST all rights reserved.
+        <div>
+          <div class="footer-logos">
+            <div class="footer-unis">
+              <img
+                class="footer-uni --desktop --tablet"
+                src="./../about/_uni.png"
+              />
+              <img
+                class="footer-uni --mobile"
+                src="./../about/_gray-korea.png"
+              />
+              <img
+                class="footer-uni --mobile"
+                src="./../about/_gray-kiid.png"
+              />
             </div>
-            <div class="footer-logos">
-                <div class="footer-unis">
-                    <img class="footer-uni --desktop --tablet" src="./../about/_uni.png" />
-                    <img class="footer-uni --mobile" src="./../about/_gray-korea.png" />
-                    <img class="footer-uni --mobile" src="./../about/_gray-kiid.png" />
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-</body>
-<script>
+  </body>
+  <script>
     document.addEventListener("DOMContentLoaded", function () {
-        var logo = document.querySelector('.logo');
+      var logo = document.querySelector(".logo");
 
-        window.addEventListener('scroll', function () {
-            var scrollPos = window.scrollY;
+      window.addEventListener("scroll", function () {
+        var scrollPos = window.scrollY;
 
-            if (scrollPos > 200) { // 스크롤이 200px 이상 내려갈 때
-                // logo.classList.add('hidden');
-                logo.style.opacity = "10%";
-            } else {
-                // logo.classList.remove('hidden');
-                logo.style.opacity = "100%"
-            }
-        });
+        if (scrollPos > 200) {
+          // 스크롤이 200px 이상 내려갈 때
+          // logo.classList.add('hidden');
+          logo.style.opacity = "10%";
+        } else {
+          // logo.classList.remove('hidden');
+          logo.style.opacity = "100%";
+        }
+      });
     });
-</script>
-
+  </script>
 </html>

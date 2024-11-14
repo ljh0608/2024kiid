@@ -1,6 +1,12 @@
 /* justify-content: space-between; */
 /* 기본 밑줄 제거 */
 
+.anchor_block {
+  display: flex;
+  gap: 8px;
+  /* align-items: end; */
+  z-index: 1;
+}
 .videoWrapper {
   display: flex;
   justify-content: center;
@@ -14,9 +20,9 @@ a {
   color: black;
 } */
 
-a:visited {
+/* a:visited {
   color: black;
-}
+} */
 
 a:hover {
   color: black;
