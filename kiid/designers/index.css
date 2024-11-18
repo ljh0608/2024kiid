@@ -98,6 +98,18 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.pjt-name:hover svg rect {
+  fill: #79e1ff;
+}
+
+.pjt-name:hover svg path {
+  fill: #ffffff;
 }
 
 .email {
