@@ -39,6 +39,9 @@
         line-height: normal;
         z-index: 2;
 
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
         @media screen and (max-width: 834px) {
           /* countdown 2 */
           font-size: 72px;
@@ -103,6 +106,8 @@
         font-weight: 500;
         line-height: normal;
         letter-spacing: -0.28px;
+
+        text-decoration: none;
       }
 
       /* @media screen and (max-width: 834px) {
@@ -187,25 +192,6 @@
         <source src="./kiid/about/2024about_EMERGENCE.mp4" type="video/mp4" />
       </video>
       <div class="logo-container"></div>
-
-      <!-- <div class="footer">
-        <div
-          style="
-            display: flex;
-            gap: 10px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-          "
-        >
-          <div>고려대학교 디자인조형학부 산업정보디자인전공</div>
-          <span style="font-weight: 600">2024년도 졸업전시 </span>
-        </div>
-        <div style="text-align: center">
-          Industrial&Information Design, Korea University. Graduation Exhibiton
-          2024
-        </div>
-      </div> -->
     </div>
 
     <header class="header">
@@ -315,7 +301,11 @@
 
       <div class="footer">
         <div class="link">
-          <a class="link__anchor">
+          <a
+            class="link__anchor"
+            href="https://www.instagram.com/kiid_gradshow_2024/"
+            target="_blank"
+          >
             <svg
               width="26"
               height="26"
@@ -335,7 +325,11 @@
             </svg>
             kiid instagram
           </a>
-          <a class="link__anchor">
+          <a
+            class="link__anchor"
+            href="https://www.instagram.com/kufia_2024/"
+            target="_blank"
+          >
             <svg
               width="26"
               height="26"
@@ -416,10 +410,7 @@
         document.getElementsByClassName("link")[0].style.display = "flex";
         const countdownInterval = setInterval(updateCountdown, 1000);
       }
-      // document.getElementsByClassName("countdown")[0].style.display = "flex";
-      // document.getElementsByClassName("header__logo")[0].style.display = "flex";
-      // document.getElementsByClassName("link")[0].style.display = "flex";
-      // const countdownInterval = setInterval(updateCountdown, 1000);
+
       document
         .getElementsByClassName("bg-video")[0]
         .addEventListener("ended", endVideo);
