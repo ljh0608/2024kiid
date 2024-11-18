@@ -102,6 +102,7 @@ a {
   display: flex;
   gap: 12px;
   align-items: center;
+  text-decoration: none;
 }
 
 .pjt-name:hover svg rect {
@@ -115,6 +116,7 @@ a {
 .email {
   color: var(--bluegray, #7a8294);
   /* mail 1 */
+  -webkit-text-stroke-width: 0.0990959033370018;
   font-family: "Neue Haas Grotesk Display Pro";
   font-size: 18px;
   font-style: normal;
@@ -131,6 +133,12 @@ a {
   .inner-container {
     width: 65%;
   }
+  .name {
+    font-size: 24px;
+  }
+  .name-eng {
+    font-size: 22px;
+  }
 
   .logo {
     margin-bottom: 300px;
@@ -142,7 +150,7 @@ a {
   }
 
   .thumb-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .email {
@@ -161,7 +169,7 @@ a {
     height: 110px;
   }
   .inner-container {
-    width: 80%;
+    width: 75%;
     margin-top: 8%;
   }
 
@@ -175,13 +183,13 @@ a {
   }
 
   .thumb-wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   .name {
     color: var(--White, #000);
     font-family: "Pretendard", sans-serif;
-    font-size: 19px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -191,13 +199,16 @@ a {
   .name-eng {
     color: var(--White, #000);
     font-family: "Pretendard", sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: -0.64px;
   }
 
+  .nameWrapper {
+    gap: 4px;
+  }
   .pjt {
     display: flex;
     margin-top: 12px;
@@ -207,15 +218,15 @@ a {
   .pjt-name {
     color: var(--White, #000);
     font-family: "Pretendard", sans-serif;
-    font-size: 12px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-decoration-line: underline;
+    -webkit-text-stroke-width: 0.12147239595651627;
   }
 
   .email {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -288,5 +299,31 @@ a {
 
   .email {
     font-size: 16px;
+  }
+}
+@media (min-width: 834px) and (max-width: 1023px) {
+  .name {
+    font-size: 17px;
+  }
+
+  .name-eng {
+    font-size: 15px;
+  }
+  .email {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 568px) {
+  .name {
+    font-size: 16px;
+  }
+
+  .name-eng {
+    font-size: 16px;
+  }
+
+  .pjt-name {
+    font-size: 14px;
   }
 }
