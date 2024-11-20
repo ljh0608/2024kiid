@@ -113,6 +113,10 @@ a {
   fill: #ffffff;
 }
 
+.pjt-name:hover {
+  font-weight: 600;
+}
+
 .email {
   color: var(--bluegray, #7a8294);
   /* mail 1 */
