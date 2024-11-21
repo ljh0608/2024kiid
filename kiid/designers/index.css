@@ -103,6 +103,7 @@ a {
   gap: 12px;
   align-items: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .pjt-name:hover svg rect {

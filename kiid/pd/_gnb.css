@@ -1,0 +1,272 @@
+.gnb-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: fixed;
+  height: fit-content;
+  z-index: 3;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  top: 0;
+  left: 0;
+}
+
+.arrow-rotate {
+  transform: rotate(-45deg);
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  padding-top: 18px;
+}
+
+.navigator {
+  display: flex;
+  gap: 58px;
+  position: relative;
+}
+
+.anchor {
+  font-family: "Pretendard", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #7e8794;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.side-ref {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+  padding-bottom: 20%;
+  /* Optional: Add padding to improve visual appearance */
+}
+
+.--side {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.--ref {
+  color: #ffffff;
+  font-family: "Pretendard", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  align-items: end;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.subanchor {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #7e8794;
+  text-decoration: none;
+}
+
+.anchor:hover {
+  color: #ffffff;
+}
+
+.subanchor:hover {
+  color: #ffffff;
+}
+
+.--active {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.--highlighted {
+  color: #ffffff;
+}
+
+.hamburger-button {
+  cursor: pointer;
+  width: 20px;
+  height: 22px;
+}
+
+.slideIn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: rgb(55, 56, 56) -1px 0 0 0;
+  background: black;
+  z-index: 1;
+  height: 100%;
+  width: 400px;
+}
+
+.slideIn-contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.--close {
+  cursor: pointer;
+  align-self: flex-end;
+  padding-right: 50px;
+  width: 24px;
+  height: 24px;
+}
+
+/*desktop only*/
+@media (min-width: 1400px) {
+  .gnb-container {
+    width: calc(100vw - 70px - 55px);
+    padding: 40px 55px 30px 70px;
+  }
+
+  .gnb-logo {
+    height: 50px;
+  }
+
+  #projects-menu {
+    position: relative;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    padding-top: 30px;
+    left: -22px;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  .project-subAnchor-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .pointer {
+    width: auto;
+    height: 16px;
+    object-fit: contain;
+  }
+}
+
+.anchor {
+  display: flex;
+  flex-direction: column;
+  /* align-items: end; */
+  z-index: 1;
+}
+
+/*tablet only*/
+@media (min-width: 461px) and (max-width: 1399px) {
+  .gnb-container {
+    width: calc(100vw - 50px - 50px);
+    padding: 40px 50px 30px;
+  }
+
+  .gnb-logo {
+    height: 40px;
+  }
+
+  .slideIn {
+    width: 50%;
+    padding: 40px 0 0 30px;
+    /* height: calc(100vh - 100px); */
+  }
+
+  .slideIn-contents {
+    padding-top: 50px;
+    gap: 50px;
+  }
+
+  .anchor {
+    font-size: 20px;
+  }
+
+  .side-anchor {
+    font-size: 36px;
+  }
+
+  .subanchor {
+    margin-top: 17px;
+    font-size: 16px;
+  }
+
+  .--folded {
+    margin-top: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .anchor {
+    font-size: 20px;
+  }
+}
+
+/*mobile only*/
+@media (max-width: 460px) {
+  .gnb-container {
+    width: calc(100vw - 30px - 30px);
+    padding: 40px 30px 30px;
+  }
+
+  .gnb-logo {
+    height: 30px;
+  }
+
+  .--close {
+    cursor: pointer;
+    align-self: flex-end;
+    padding-right: 50px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .slideIn {
+    width: 100%;
+    padding: 40px 0 0 30px;
+    /* height: calc(100vh - 100px); */
+  }
+
+  .side-ref {
+    margin-top: 200px;
+  }
+
+  .slideIn-contents {
+    margin-left: 10px;
+    padding-top: 50px;
+    gap: 50px;
+  }
+
+  .anchor {
+    font-size: 20px;
+  }
+
+  .side-anchor {
+    font-size: 36px;
+  }
+
+  .subanchor {
+    font-size: 16px;
+    margin-top: 17px;
+  }
+
+  .--folded {
+    margin-top: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,778 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title content="2023년도 졸업전시 | 고려대학교 산업정보디자인"></title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/_gnb.css" />
+    <link rel="stylesheet" href="./_footer.css" />
+    <link rel="stylesheet" href="./_common.css" />
+
+    <script src="./_gnb.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap");
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      width: 100vw;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+    "
+  >
+    <div class="gnb-container">
+      <a class="logo-wrapper" href="/2024/kiid/about">
+        <img class="gnb-logo" src="./../about/assets/mainLogoX3.png" />
+      </a>
+      <div class="navigator --desktop">
+        <a class="anchor" href="/2024/kiid/about">ABOUT</a>
+        <div id="projects-menu" class="projects-menu">
+          <a class="anchor --active" id="projects">PROJECTS</a>
+          <div class="dropdown --hidden" id="projects-dropdown">
+            <div class="project-subAnchor-container">
+              <a class="subanchor --highlighted" href="/2024/kiid/pd">
+                PRODUCT DEVELOPMENT </a
+              ><br />
+            </div>
+            <div class="project-subAnchor-container">
+              <a class="subanchor" href="/2024/kiid/psd">
+                PRODUCT SYSTEM DESIGN
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="anchor" href="/2024/kiid/designers">DESIGNERS</a>
+      </div>
+      <div class="navigator --tablet --mobile">
+        <div class="hamburger" id="hamburger">
+          <div class="hamburger-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22 2L0 2V0L22 1.90735e-06V2ZM22 11L0 11V9L22 9V11ZM0 20L22 20V18L0 18V20Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="slideIn --hidden" id="gnb-slideIn">
+          <div class="hamburger-button --close" id="closeBtn">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.07118 5.65683L1.41435 0L0.000139594 1.41421L5.65697 7.07104L0 12.728L1.41421 14.1422L7.07118 8.48526L12.7281 14.1421L14.1423 12.7279L8.4854 7.07104L14.1421 1.41431L12.7279 9.29832e-05L7.07118 5.65683Z"
+                fill="#000000"
+              />
+            </svg>
+          </div>
+          <div class="slideIn-contents">
+            <a
+              class="anchor --side"
+              href="/2024/kiid/about"
+              style="font-size: 36px"
+            >
+              ABOUT
+            </a>
+            <div
+              class="anchor --side"
+              id="slideIn-projects"
+              style="font-size: 36px"
+            >
+              PROJECTS
+              <a
+                class="subanchor subanchor__marginTop --folded"
+                href="/2024/kiid/pd"
+                >PRODUCT DEVELOPMENT</a
+              >
+              <a
+                class="subanchor subanchor__marginTop --folded"
+                href="/2024/kiid/psd"
+                >PRODUCT SYSTEM DESIGN</a
+              >
+            </div>
+            <a
+              class="anchor --side"
+              href="/2024/kiid/designers"
+              style="font-size: 36px"
+            >
+              DESIGNERS
+            </a>
+            <div class="side-ref">
+              <div style="display: flex">
+                <a class="anchor_block --ref" href="http://kiid.korea.ac.kr">
+                  KIID GRADSHOW
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div style="display: flex">
+                <a
+                  class="--ref anchor_block"
+                  href="https://www.instagram.com/kiid_gradshow_2024/"
+                >
+                  INSTAGRAM
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="container">
+      <div class="inner-container">
+        <img class="logo" src="./psdmainLogo.png" alt="Metaverse Metahome" />
+        <div class="text-container">
+          <div class="desc">
+            2024년 고려대학교 제품시스템디자인 과목에서 학생들과 함께한 이번
+            4학년 졸업작품은 AI와 디자인이라는 주제로 2년째 진행되었습니다.
+            <br />
+            <br />
+          </div>
+          <div class="desc">
+            생성형 AI와 디자인은 짧은 시간안에 상당히 가까워졌습니다. 대중적인
+            AI 파운데이션 모델이 세상에 등장한지 2년여의 기간동안 고려대학교
+            디자인에서는 끊임없는 실험을 하였고, 이제 학생들은 아이디어 발상,
+            스타일 검토, 페르소나 제작, 컨셉방향성 검토 등 제반 디자인 솔루션
+            창작과정에 유연하게 AI를 적용하고 있습니다. 또, AI가 제시할 디자인의
+            미래에 대해서도 풍부한 상상력을 발현하였습니다. 결과적으로 기술과
+            스타일의 결합을 통해 창의적이면서 현실 세계의 문제에 대한 다양한
+            디자인적 해결책을 모색했습니다.<br />
+          </div>
+          <div class="desc">
+            <div class="desc">
+              생성형 AI와 디자인은 짧은 시간안에 상당히 가까워졌습니다. 대중적인
+              AI 파운데이션 모델이 세상에 등장한지 2년여의 기간동안 고려대학교
+              디자인에서는 끊임없는 실험을 하였고, 이제 학생들은 아이디어 발상,
+              스타일 검토, 페르소나 제작, 컨셉방향성 검토 등 제반 디자인 솔루션
+              창작과정에 유연하게 AI를 적용하고 있습니다. 또, AI가 제시할
+              디자인의 미래에 대해서도 풍부한 상상력을 발현하였습니다.
+              결과적으로 기술과 스타일의 결합을 통해 창의적이면서 현실 세계의
+              문제에 대한 다양한 디자인적 해결책을 모색했습니다.<br />
+            </div>
+            <br />
+          </div>
+        </div>
+        <div class="prof">Prof. 유승헌</div>
+
+        <div class="grid">
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/도로시">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/도로시.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">도로시</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+                <!-- <img class="project-arrow" src="./arrow_white.png" /> -->
+              </div>
+            </a>
+            <p class="project-title-mobile">도로시</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/Bapl">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/Bapl_썸네일.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">Bapl</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">Bapl</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/Cleanic">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/Cleanic.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">Cleanic</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">Cleanic</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/FARO">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/FARO-썸네일.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">FARO</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">FARO</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/pd/project/FRING">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/FRING.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">FRING</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">FRING</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/Glide">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/Glide.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">Glide</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">Glide</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/pd/project/Hannip">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/Hannip.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">Hannip</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">Hannip</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/Haru">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/Haru.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">Haru</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">Haru</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/Leafle">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/Leafle.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">Leafle</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">Leafle</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/LOOKIE">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/LOOKIE.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">LOOKIE</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">LOOKIE</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/LOUMOU">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/LOUMOU.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">LOUMOU</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">LOUMOU</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/oasis">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/oasis.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">oasis</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">oasis</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/pd/project/OF.U">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/OF.U.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">OF.U</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">OF.U</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/OwnR">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/OwnR.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">OwnR</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">OwnR</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/Slowork">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/Slowork.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">Slowork</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">Slowork</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/WEB">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/WEB.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">WEB</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">WEB</p>
+          </div>
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kiid/psd/project/Witch">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/Witch.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">Witch</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">Witch</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-wrapper">
+        <div class="copyright">
+          Copyright 2023. KIID POST all rights reserved.
+        </div>
+        <div class="footer-logos">
+          <div class="footer-unis">
+            <img
+              class="footer-uni --desktop --tablet"
+              src="./../about/_uni.png"
+            />
+            <img class="footer-uni --mobile" src="./../about/_gray-korea.png" />
+            <img class="footer-uni --mobile" src="./../about/_gray-kiid.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js" defer></script>
+</html>

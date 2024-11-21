@@ -11,6 +11,24 @@
           opacity: 1;
         }
       }
+
+      .landingText {
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.16px;
+      }
+
+      .landingBottomText {
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: -0.16px;
+      }
       body {
         margin: 0;
         width: 100vw;
@@ -165,11 +183,11 @@
         playsinline
         style="pointer-events: none"
       >
-        <source src="./about/2024about_EMERGENCE.mp4" type="video/mp4" />
+        <source src="./랜딩_가로.mp4" type="video/mp4" />
       </video>
       <div class="logo-container">
         <div class="logo-wrapper" onclick="location.href='/2024/kiid/about'">
-          <button class="enter-btn" id="ent-btn">ENTER</button>
+          <!-- <button class="enter-btn" id="ent-btn">ENTER</button>
           <svg
             width="26"
             height="26"
@@ -186,7 +204,7 @@
                 fill="white"
               />
             </g>
-          </svg>
+          </svg> -->
         </div>
       </div>
       <div class="footer">
@@ -199,10 +217,12 @@
             justify-content: center;
           "
         >
-          <div>고려대학교 디자인조형학부 산업정보디자인전공</div>
-          <span style="font-weight: 600">2024년도 졸업전시 </span>
+          <div class="landingText">
+            고려대학교 디자인조형학부 산업정보디자인전공
+          </div>
+          <span class="landingText">2024년도 졸업전시 </span>
         </div>
-        <div style="text-align: center">
+        <div style="text-align: center" class="landingBottomText">
           Industrial&Information Design, Korea University. Graduation Exhibiton
           2024
         </div>

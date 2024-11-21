@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>고려대학교 졸업전시 카운트다운</title>
     <style>
+      .videoWrapper {
+        display: flex;
+        justify-content: center;
+      }
       body {
         display: flex;
         flex-direction: column;
@@ -18,7 +22,25 @@
         overflow-x: hidden;
         height: 100%;
       }
+      .landingText {
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.16px;
+        color: #b3bacb;
+      }
 
+      .landingBottomText {
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.16px;
+        color: #b3bacb;
+      }
       .countdown {
         display: none;
         flex-direction: column;
@@ -189,9 +211,40 @@
         playsinline
         style="pointer-events: none"
       >
-        <source src="./kiid/about/2024about_EMERGENCE.mp4" type="video/mp4" />
+        <source src="./랜딩_가로.mp4" type="video/mp4" />
       </video>
-      <div class="logo-container"></div>
+      <div class="logo-container">
+        <img src="./assets/logo.png" alt="logo" />
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          position: absolute;
+          bottom: 50px;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: #7a8294;
+          "
+        >
+          <div class="landingText">
+            고려대학교 디자인조형학부 산업정보디자인전공
+          </div>
+          <span class="landingText">2024년도 졸업전시 </span>
+        </div>
+        <div class="landingBottomText">
+          Industrial&Information Design, Korea University. Graduation Exhibiton
+          2024
+        </div>
+      </div>
     </div>
 
     <header class="header">
@@ -358,12 +411,15 @@
               text-align: center;
               align-items: center;
               justify-content: center;
+              color: #b3bacb;
             "
           >
-            <div>고려대학교 디자인조형학부 산업정보디자인전공</div>
-            <span style="font-weight: 600">2024년도 졸업전시 </span>
+            <div class="landingText">
+              고려대학교 디자인조형학부 산업정보디자인전공
+            </div>
+            <span>2024년도 졸업전시 </span>
           </div>
-          <div style="text-align: center">
+          <div style="text-align: center" class="landingBottomText">
             Industrial&Information Design, Korea University. Graduation
             Exhibiton 2024
           </div>
