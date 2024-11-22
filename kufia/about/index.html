@@ -1,0 +1,403 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title content="2023년도 졸업전시 | 고려대학교 산업정보디자인"></title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./_gnb.css" />
+    <link rel="stylesheet" href="./_footer.css" />
+    <link rel="stylesheet" href="./_common.css" />
+    <script src="_gnb.js"></script>
+  </head>
+  <body
+    style="
+      margin: 0;
+      width: 100vw;
+      overflow-x: hiddenl;
+      display: flex;
+      justify-content: center;
+    "
+  >
+    <div class="gnb-container">
+      <a class="logo-wrapper" href="/2024/kiid/about">
+        <img class="gnb-logo" src="./assets/mainLogoX3.png" />
+      </a>
+      <div class="navigator --desktop">
+        <a class="anchor --active" href="/2024/kufia/about">ABOUT</a>
+        <div id="projects-menu" class="projects-menu">
+          <a class="anchor" id="projects" href="/2024/kufia/artworks/"
+            >ARTWORKS</a
+          >
+          <!-- <div class="dropdown --hidden" id="projects-dropdown">
+            <div class="project-subAnchor-container">
+              <a class="subanchor" href="/2024/kiid/pd">PRODUCT DEVELOPMENT</a
+              ><br />
+            </div>
+            <div class="project-subAnchor-container">
+              <a class="subanchor" href="/2024/kiid/psd"
+                >PRODUCT SYSTEM DESIGN</a
+              >
+            </div>
+          </div> -->
+        </div>
+        <a class="anchor" href="/2024/kufia/artists/">ARTISTS</a>
+      </div>
+      <div class="navigator --tablet --mobile">
+        <div class="hamburger" id="hamburger">
+          <div class="hamburger-button">
+            <svg
+              width="22"
+              height="20"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="14" height="2" fill="#000000" />
+              <rect y="6" width="14" height="2" fill="#000000" />
+              <rect y="12" width="14" height="2" fill="#000000" />
+            </svg>
+          </div>
+        </div>
+        <div class="slideIn --hidden" id="gnb-slideIn">
+          <div class="hamburger-button --close" id="closeBtn">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.07118 5.65683L1.41435 0L0.000139594 1.41421L5.65697 7.07104L0 12.728L1.41421 14.1422L7.07118 8.48526L12.7281 14.1421L14.1423 12.7279L8.4854 7.07104L14.1421 1.41431L12.7279 9.29832e-05L7.07118 5.65683Z"
+                fill="#000000"
+              />
+            </svg>
+          </div>
+          <div class="slideIn-contents">
+            <a
+              class="anchor --side"
+              href="/2024/kufia/about/"
+              style="font-size: 36px"
+            >
+              ABOUT
+            </a>
+            <!-- <div
+              class="anchor --side"
+              id="slideIn-projects"
+              style="font-size: 36px"
+            > -->
+            <a
+              class="anchor --side"
+              href="/2024/kufia/artworks"
+              style="font-size: 36px"
+            >
+              ARTWORKS
+            </a>
+
+            <a
+              class="anchor --side"
+              href="/2024/kufia/artists/"
+              style="font-size: 36px"
+            >
+              ARTISTS
+            </a>
+          </div>
+          <div class="side-ref">
+            <div style="display: flex">
+              <a class="anchor_block --ref" href="http://kiid.korea.ac.kr">
+                KIID GRADSHOW
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div style="display: flex">
+              <a
+                class="--ref anchor_block"
+                href="https://www.instagram.com/kufia_2024/"
+              >
+                INSTAGRAM
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="container">
+      <img class="logo" src="./assets/aboutMainImage.png" alt="Kiid MainLogo" />
+      <div class="inner-container">
+        <!-- <div class="logo-bg">
+          <img class="logo-main" src="./assets/aboutMainImage.png" />
+        </div> -->
+        <div class="paragraphs">
+          <div class="paragraph">
+            <p>
+              EMERGENCE(창발 또는 떠오름 현상)는 하위 요소들에서는 나타나지 않던
+              새로운 속성이 상위 계층에서 비로소 드러나는 현상을 의미한다. 이번
+              전시는 고려대학교 디자인조형학부의 조형예술전공과
+              산업정보디자인전공의 첫 합작으로, 이전에는 마주칠 수 없었던
+              작품들이 하나의 공간에 놓여 새로운 시너지와 가능성을 선보이는
+              출발점이다.
+            </p>
+            <p>
+              인류가 우주를 향한 첫 발을 내디뎠을 때 시공간의 한계로부터 한 층
+              도약했던 것처럼, 4년동안 각자의 위치에서 수많은 시행착오와 경험을
+              쌓은 디자인조형학부의 68인 졸업생들은 이번 전시를 통해 서로
+              연결되어 하나의 큰 흐름을 만들어내고, 예술적 세계를 확장할 것이다.
+            </p>
+          </div>
+
+          <div class="spacing"></div>
+          <div class="paragraph">
+            <p>
+              EMERGENCE represents the phenomenon where new qualities, unseen in
+              individual elements, reveal themselves as part of a larger,
+              higher-level whole. This exhibition marks the inaugural
+              collaboration between the Fine Arts and Industrial Information
+              Design majors at the School of Art and Design, Korea University.
+              Here, previously isolated works come together, unveiling new
+              synergies and possibilities within a shared space.
+            </p>
+            <p>
+              Much like humanity's first steps into the cosmos, transcending the
+              limits of space and time, the 68 graduating students from both
+              Fine Arts and Design disciplines have dedicated the past four
+              years to rigorous exploration and growth in their respective
+              fields. Through this exhibition, they unite their diverse
+              experiences, forming a powerful current that expands and enriches
+              the artistic landscape.
+            </p>
+          </div>
+        </div>
+        <div class="videoWrapper">
+          <video
+            class="poster"
+            muted
+            autoplay
+            loop
+            playsinline
+            style="pointer-events: none"
+          >
+            <source src="./2024about_EMERGENCE.mp4" type="video/mp4" />
+            <strong>Your browser does not support the video tag.</strong>
+          </video>
+        </div>
+        <!-- <video
+          class="poster"
+          muted
+          autoplay
+          loop
+          playsinline
+          style="pointer-events: none"
+        >
+          <source src="poster.mp4" type="video/mp4" />
+          <strong>Your browser does not support the video tag.</strong>
+        </video> -->
+        <div class="paragraphs">
+          <div class="course">
+            <a
+              class="cta"
+              href="/2024/kufia/artworks/"
+              style="display: flex; justify-content: center"
+            >
+              <img
+                src="./assets/fineArtGradExhibition.png"
+                alt="조형"
+                class="mainImg"
+              />
+            </a>
+            <div class="paragraphs">
+              <div class="paragraph">
+                <p>깊은 지혜와 뜨거운 마음을 지닌 여러분께,</p>
+                <p>
+                  여러분은 치열한 입시 준비와 학부 생활의 시작을 전례 없는
+                  코로나 팬데믹 속에서 치러내며 많은 혼란과 어려움을 겪었습니다.
+                  그러나 그 과정에서 누구보다도 빠르게 변화하는 첨단 기술의
+                  발전과 새로운 세상의 변화를 경험하며 한층 성장할 수
+                  있었습니다. 이제 그 좌충우돌의 시기를 지나 평온한 일상 속에서
+                  새로운 출발을 맞이하게 되었습니다.
+                </p>
+                <p>
+                  앞으로 걸어갈 길에도 예상치 못한 도전들이 여러분을 기다릴 수
+                  있습니다. 하지만 그럴 때마다 고려대학교 디자인조형학부에서
+                  함께했던 열정 가득한 시간들, 서로 부딪히고 협력하며 성장했던
+                  순간들을 떠올리길 바랍니다.
+                </p>
+
+                <p>
+                  예술은 단순한 표현을 넘어서 사람과 사람을 이어주고, 새로운
+                  관점을 창출하며 미래를 상상할 수 있는 힘을 줍니다. 지난
+                  4년간의 예술적 탐색 속에서 겪었던 서툴고 미숙했던 순간들조차
+                  가장 소중한 세렌디피티(serendipity)로 남아 있을 것입니다. 그
+                  날카롭고 강렬했던 젊음의 기억들이 앞으로의 도전에 맞설 용기와
+                  자신감을 줄 것입니다.
+                </p>
+
+                <p>
+                  이번 졸업 전시회는 여러분이 세상에 선보이는 창조적 비전의
+                  결실입니다. 그러나 이는 끝이 아닌, 예술적 여정의 새로운
+                  시작입니다. 여러분의 앞날이 언제나 밝고 창의적이길 바라며,
+                  성공과 기쁨이 함께하길 진심으로 기원합니다.
+                </p>
+                <p>다시 한번 졸업을 축하드립니다.</p>
+              </div>
+              <!-- <div class="paragraph"></div>
+              <div class="paragraph">
+                미래 삶의 질은 이러한 도전들이 모여 우리의 감각과 생각과 행동에
+                새로운 동시대적 대안을 제시함으로써 우리가 가진 가치패러다임을
+                진화시켜 나가는 능력에 달려있습니다. 이제 우리 앞에 놓인
+                불확실한 변화는 흥미진진한 상상이 됩니다. 여러분을 그 변화와
+                상상의 출발점에 초대합니다.
+              </div> -->
+              <div class="profName">Prof. 이예승</div>
+            </div>
+            <div class="paragraphs">
+              <div class="paragraph">
+                <p>
+                  조형예술과의 졸업 전시는 예술을 탐구하며 축적한 지식과 감성을
+                  집약하여 발표하는 자리입니다. 현대의 시각환경은 빠르게
+                  변화하고 있으며, 우리는 새로운 매체들을 통해 생산되는 수많은
+                  이미지를 경험하며 살고 있습니다. 그래서 저는 이 전시를
+                  이해하기 위한 두 개의 관점을 제안합니다.
+                </p>
+                <p>
+                  첫째, 미술은 이미지를 만드는 일에 그치지 않고 우리 사회에 대해
+                  비판적인 질문을 던지고, 담론을 생산합니다. 여기에 전시된
+                  작품들은 작가로서의 정체성과 사회적, 개인적 질문에 대한 답을
+                  찾으려는 노력의 산물입니다. 둘째, 그럼에도 불구하고 예술가들은
+                  늘 아름다움을 모색합니다. 미술은 기계 매체에 비하면 매우
+                  느리고 비효율적이고 방식으로 이미지를 생산하지만, 한 개인이
+                  경험한 세밀한 감수성으로 칠해져서 여전히 인간적입니다. 그래서
+                  미술은 여전히 우리의 삶을 돌아보게 만드는 보편적인 가치와
+                  정서적인 호소력을 가지고 있습니다.
+                </p>
+                <p>
+                  이 전시를 준비하는 1년 동안 학생들의 주제는 개인의
+                  문제의식에서 출발했지만, 점차 밖을 향해서 열리고, 자기 고백에
+                  머물지 않고, 미술의 형식을 갖추어 성숙해졌습니다. 우리
+                  학생들이 독창적인 예술가, 건강한 공동체의 일원, 그리고
+                  무엇보다 자신의 삶의 주인이 되기를 응원합니다.
+                </p>
+              </div>
+
+              <div class="profName">Prof. 서동욱</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="section-name">주최 및 참여</div>
+        <div class="logos">
+          <img class="logo" src="./assets/koreaLogo.png" alt="koreaLogo" />
+          <img class="logo" src="./assets/kiidLogo.png" alt="kiidLogo" />
+        </div>
+        <div class="kiid">고려대학교 디자인조형학부 산업정보디자인전공</div>
+        <div class="designers">
+          <div class="column">
+            <div class="name">김건희</div>
+            <div class="name">김주희</div>
+            <div class="name">배준혁</div>
+            <div class="name">이채은</div>
+            <div class="name">채주리</div>
+          </div>
+          <div class="column">
+            <div class="name">김영호</div>
+            <div class="name">로시오</div>
+            <div class="name">신정우</div>
+            <div class="name">이현제</div>
+          </div>
+          <div class="column">
+            <div class="name">김유진</div>
+            <div class="name">류승아</div>
+            <div class="name">신희원</div>
+            <div class="name">정서강</div>
+          </div>
+          <div class="column">
+            <div class="name">김은정</div>
+            <div class="name">류지승</div>
+            <div class="name">이선유</div>
+            <div class="name">정유진</div>
+          </div>
+          <div class="column">
+            <div class="name">김정민</div>
+            <div class="name">박서영</div>
+            <div class="name">이승원</div>
+            <div class="name">창소은</div>
+          </div>
+        </div>
+        <div class="section-name">졸업전시준비위원회</div>
+        <div class="committee">
+          <div class="row">
+            <div class="title">졸업대표</div>
+            <div class="name">이채은</div>
+          </div>
+          <div class="row">
+            <div class="title">디자인팀</div>
+            <div class="name">김건희</div>
+            <div class="name">신희원</div>
+            <div class="name">정서장</div>
+          </div>
+          <div class="row">
+            <div class="title">설치팀</div>
+            <div class="name">김은정</div>
+            <div class="name">김주희</div>
+            <div class="name">창소은</div>
+          </div>
+          <div class="row">
+            <div class="title">회계팀</div>
+            <div class="name">김영호</div>
+          </div>
+        </div>
+        <div class="section-name">온라인전시팀</div>
+        <div class="row">
+          <div class="name">최예린</div>
+          <div class="name">서채원</div>
+          <div class="name">이수민</div>
+          <div class="name">이현서</div>
+        </div>
+        <div class="footer-wrapper">
+          <div class="copyright">
+            Copyright 2024. KUFIA Emergence all rights reserved.
+          </div>
+          <div class="footer-logos">
+            <div class="footer-unis">
+              <img class="footer-uni --desktop --tablet" src="_uni.png" />
+              <img class="footer-uni --mobile" src="_gray-korea.png" />
+              <img class="footer-uni --mobile" src="_gray-kiid.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

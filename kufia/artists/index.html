@@ -1,0 +1,546 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title content="2023년도 졸업전시 | 고려대학교 산업정보디자인"></title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./_gnb.css" />
+    <link rel="stylesheet" href="./_footer.css" />
+    <link rel="stylesheet" href="./_common.css" />
+    <script src="./index.js"></script>
+    <script src="./_gnb.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap");
+    </style>
+  </head>
+
+  <body
+    style="
+      margin: 0;
+      width: 100vw;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+    "
+  >
+
+      <div class="gnb-container">
+        <a class="logo-wrapper" href="/2024/kiid/about">
+            <img class="gnb-logo" src="./../about/assets/mainLogoX3.png" />
+        </a>
+        <div class="navigator --desktop">
+          <a class="anchor " href="/2024/kufia/about">ABOUT</a>
+          <div id="projects-menu" class="projects-menu">
+            <a class="anchor" id="projects" href="/2024/kufia/artworks/">ARTWORKS</a>
+          
+          </div>
+          <a class="anchor --active" href="/2024/kufia/artists">ARTISTS</a>
+        </div>
+        <div class="navigator --tablet --mobile">
+          <div class="hamburger" id="hamburger">
+            <div class="hamburger-button">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="14" height="2" fill="#000000" />
+                <rect y="6" width="14" height="2" fill="#000000" />
+                <rect y="12" width="14" height="2" fill="#000000" />
+              </svg>
+            </div>
+          </div>
+          <div class="slideIn --hidden" id="gnb-slideIn">
+            <div class="hamburger-button --close" id="closeBtn">
+              <svg
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.07118 5.65683L1.41435 0L0.000139594 1.41421L5.65697 7.07104L0 12.728L1.41421 14.1422L7.07118 8.48526L12.7281 14.1421L14.1423 12.7279L8.4854 7.07104L14.1421 1.41431L12.7279 9.29832e-05L7.07118 5.65683Z"
+                  fill="#000000"
+                />
+              </svg>
+            </div>
+            <div class="slideIn-contents">
+              <a
+                class="anchor --side"
+                href="/2024/kufia/about"
+                style="font-size: 36px"
+              >
+                ABOUT
+              </a>
+              <a
+              class="anchor --side"
+              href="/2024/kufia/artworks"
+              style="font-size: 36px"
+            >
+              ARTWORKS
+            </a>
+             
+              <a
+                class="anchor --side"
+                href="/2024/kufia/artists/"
+                style="font-size: 36px"
+              >
+                ARTISTS
+              </a>
+            </div>
+            <div class="side-ref">
+              <div style="display: flex">
+                <a class="anchor_block --ref" href="http://kiid.korea.ac.kr">
+                  KIID GRADSHOW
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div style="display: flex">
+                <a class="--ref anchor_block" href="https://www.instagram.com/kufia_2024/" target="_blank">
+                  INSTAGRAM
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+       
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="slideIn --hidden" id="gnb-slideIn">
+          <div class="hamburger-button --close" id="closeBtn">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.07118 5.65683L1.41435 0L0.000139594 1.41421L5.65697 7.07104L0 12.728L1.41421 14.1422L7.07118 8.48526L12.7281 14.1421L14.1423 12.7279L8.4854 7.07104L14.1421 1.41431L12.7279 9.29832e-05L7.07118 5.65683Z"
+                fill="#000000"
+              />
+            </svg>
+          </div>
+          <div class="slideIn-contents">
+            <a
+              class="anchor --active"
+              href="/2024/kufia/about"
+              style="font-size: 36px"
+            >
+              ABOUT
+            </a>
+            <a
+            class="anchor --active"
+            href="/2024/kufia/artworks/"
+            style="font-size: 36px"
+          >
+            ARTWORKS
+          </a>
+            <a
+              class="anchor --active"
+              href="/2024/kufia/artists/"
+              style="font-size: 36px"
+            >
+              ARTISTS
+            </a>
+            <div class="side-ref">
+              <div style="display: flex">
+                <a class="anchor --ref" href="http://kiid.korea.ac.kr" target="_blank">
+                  KIID GRADSHOW
+                </a>
+                <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                  fill="black"
+                />
+              </svg>
+              </div>
+              <div style="display: flex">
+                <a class="anchor --ref" href="https://www.instagram.com/kufia_2024/" target="_blank">
+                  INSTAGRAM
+                </a>
+                <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                  fill="black"
+                />
+              </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="container" id="container">
+      <img class="smallLogo" src="./../../kiid/designers/assets/designerLogo.png" alt="디자이너 로고" style="z-index: 0;"/>
+      <div class="inner-container" style="z-index: 1">
+        <!-- <img class="logo --tablet --mobile" src="./tablet.png" alt="members profile"/> -->
+
+        <div class="grid">
+          <div class="card">
+            <a href="/2024/kufia/artworks/GeonheeKim">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/김건희.png" alt="Geonhee Kim" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">김건희</div>
+              <div class="name-eng">Geonhee Kim</div>
+            </div>
+            <div class="email">ggeon1027@gmail.com</div>
+   
+          </div>
+
+          <div class="card">
+            <a href="/2024/kufia/artworks/YounghoKim">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/김영호.png" alt="Youngho Kim" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">김영호</div>
+              <div class="name-eng">Youngho Kim</div>
+            </div>
+            <div class="email">younghokimmy@naver.com</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/YujinKim">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/김유진.png" alt="Yujin Kim" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">김유진</div>
+              <div class="name-eng">Yujin Kim</div>
+            </div>
+            <div class="email">000607@korea.ac.kr</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/EunjungKim">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/김은정.png" alt="Eunjung Kim" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">김은정</div>
+              <div class="name-eng">Eunjung Kim</div>
+            </div>
+            <div class="email">joy4078@naver.com</div>
+          </div>
+    
+          <div class="card">
+            <a href="/2024/kufia/artworks/JeongminKim">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/김정민.png" alt="Jeongmin Kim" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">김정민</div>
+              <div class="name-eng">Jeongmin Kim</div>
+            </div>
+            <div class="email">duckykjm@naver.com</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/JuheeKim">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/김주희.png" alt="Juhee Kim" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">김주희</div>
+              <div class="name-eng">Juhee Kim</div>
+            </div>
+            <div class="email">lina911car@gmail.com</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/Rocio">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/로시오.png" alt="Rocio" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">로시오</div>
+              <div class="name-eng">Rocio</div>
+            </div>
+            <div class="email">ambarsanti27@gmail.com</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/Seung-aRyu">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/류승아.png" alt="Seung-a Ryu" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">류승아</div>
+              <div class="name-eng">Seung-a Ryu</div>
+            </div>
+            <div class="email">agnuesuyr@gmail.com</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/JiseungRyu">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/류지승.png" alt="Jiseung Ryu" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">류지승</div>
+              <div class="name-eng">Jiseung Ryu</div>
+            </div>
+            <div class="email">simul8779@gmail.com</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/SeoyoungPark">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/박서영.png" alt="Seoyoung Park" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">박서영</div>
+              <div class="name-eng">Seoyoung Park</div>
+            </div>
+            <div class="email">seoyoungpark18@naver.com</div>
+          </div>
+
+          <div class="card">
+            <a href="/2024/kufia/artworks/Junhyeok ae">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/배준혁.png" alt="Junhyeok Bae" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">배준혁</div>
+              <div class="name-eng">Junhyeok Bae</div>
+            </div>
+            <div class="email">ghlko901@gmail.com</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/JungwooShin">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/신정우.png" alt="Jungwoo Shin" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">신정우</div>
+              <div class="name-eng">Jungwoo Shin</div>
+            </div>
+            <div class="email">chonu96@naver.com</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/HeewonShin">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/신희원.png" alt="Heewon Shin" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">신희원</div>
+              <div class="name-eng">Heewon Shin</div>
+            </div>
+            <div class="email">heehewon@gmail.com</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/SeonyuLee">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/이선유.png" alt="Seonyu Lee" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">이선유</div>
+              <div class="name-eng">Seonyu Lee</div>
+            </div>
+            <div class="email">s2unuu@gmail.com</div>
+          </div>
+          <div class="card">
+            <a href="/2024/kufia/artworks/SeungwonLee">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/이승원.png" alt="Seungwon Lee" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">이승원</div>
+              <div class="name-eng">Seungwon Lee</div>
+            </div>
+            <div class="email">xxx0359@naver.com</div>
+          </div>
+
+             <div class="card">
+            <a href="/2024/kufia/artworks/ChaeeunLee">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/이채은.png" alt="Chaeeun Lee" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">이채은</div>
+              <div class="name-eng">Chaeeun Lee</div>
+            </div>
+            <div class="email">cyno.1@yahoo.com</div>
+          </div>
+
+          <div class="card">
+            <a href="/2024/kufia/artworks/HyunjeLee">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/이현제.png" alt="Hyunje Lee" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">이현제</div>
+              <div class="name-eng">Hyunje Lee</div>
+            </div>
+            <div class="email">djdlguswp@gmail.com</div>
+          </div>
+
+          <div class="card">
+            <a href="/2024/kufia/artworks/SeokangJeong">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/정서강.png" alt="Seokang Jeong" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">정서강</div>
+              <div class="name-eng">Seokang Jeong</div>
+            </div>
+            <div class="email">vely0_0@naver.com</div>
+          </div>
+
+          <div class="card">
+            <a href="/2024/kufia/artworks/YujinChung">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/정유진.png" alt="Yujin Chung" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">정유진</div>
+              <div class="name-eng">Yujin Chung</div>
+            </div>
+            <div class="email">crimson2375@gmail.com</div>
+          </div>
+
+          <div class="card">
+            <a href="/2024/kufia/artworks/SoeunChang">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/창소은.png" alt="Soeun Chang" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">창소은</div>
+              <div class="name-eng">Soeun Chang</div>
+            </div>
+            <div class="email">soeunchang@gmail.com</div>
+          </div>
+
+         
+
+          <div class="card">
+            <a href="/2024/kufia/artworks/JuriChae">
+            <div class="thumb-wrapper">
+              <img class="thumb" src="./assets/채주리.png" alt="Juri Chae" />
+            </div>
+              </a>
+            <div class="nameWrapper"> 
+              <div class="name">채주리</div>
+              <div class="name-eng">Juri Chae</div>
+            </div>
+            <div class="email">cownfl518@naver.com</div>
+          </div>
+    
+        </div>
+      </div>
+
+      <div class="footer-wrapper">
+        <div class="copyright"> Copyright 2023. KIID POST all rights reserved. </div>
+
+        <div>
+          <div class="footer-logos">
+            <div class="footer-unis">
+              <img
+                class="footer-uni --desktop --tablet"
+                src="./../about/_uni.png"
+              />
+              <img
+                class="footer-uni --mobile"
+                src="./../about/_gray-korea.png"
+              />
+              <img
+                class="footer-uni --mobile"
+                src="./../about/_gray-kiid.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var logo = document.querySelector(".logo");
+
+      window.addEventListener("scroll", function () {
+        var scrollPos = window.scrollY;
+
+        if (scrollPos > 200) {
+          // 스크롤이 200px 이상 내려갈 때
+          // logo.classList.add('hidden');
+          logo.style.opacity = "10%";
+        } else {
+          // logo.classList.remove('hidden');
+          logo.style.opacity = "100%";
+        }
+      });
+    });
+  </script>
+</html>

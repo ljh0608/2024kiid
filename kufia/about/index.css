@@ -1,0 +1,626 @@
+/* justify-content: space-between; */
+/* 기본 밑줄 제거 */
+.mainImg {
+  width: 150%;
+}
+.anchor_block {
+  display: flex;
+  gap: 8px;
+  /* align-items: end; */
+  z-index: 1;
+}
+.videoWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 268px 0 420px 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* a:link {
+  color: black;
+} */
+
+/* a:visited {
+  color: black;
+} */
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+.profName {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  bottom: 30px;
+}
+
+.spacing {
+  margin-top: 80px;
+}
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  height: auto;
+  object-fit: contain;
+}
+
+.logo-bg {
+  height: auto;
+  object-fit: contain;
+}
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  word-break: break-all;
+  font-style: normal;
+  gap: 30px;
+  color: #000000;
+
+  line-height: 160%; /* 32px */
+  letter-spacing: -0.4px;
+}
+
+br {
+  content: " ";
+  margin-top: 0.5rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.poster {
+  /* margin: 200px 0 200px; */
+  height: auto;
+  object-fit: contain;
+}
+
+.cta {
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+  gap: 15px;
+  width: 100%;
+  height: auto;
+
+  color: black;
+}
+
+.cta div {
+  width: calc(100% - 100px);
+  position: relative;
+}
+.cta .title {
+  white-space: nowrap;
+  /* width: 80%; */
+  height: auto;
+  margin: 0;
+
+  /* title 1 */
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 120px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cta span {
+  width: 100%;
+}
+.arrow {
+  width: 100px;
+  height: auto;
+  padding-top: 80px;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+
+.course {
+  /* width: 100%; */
+  margin-bottom: 200px;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.section-name {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -0.04em;
+  /* subtilte 1 */
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.logos {
+  display: flex;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.kiid {
+  line-height: 120%;
+  color: #000;
+
+  /* subtitle 2 */
+  font-family: "Pretendard", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.designers {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500;
+  line-height: 120%;
+  color: #ffff;
+}
+
+.sponsors {
+  display: flex;
+}
+
+.committee {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 300px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.row .title {
+  width: fit-content;
+  text-align: right;
+  font-family: "Pretendard", sans-serif;
+
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.name {
+  font-family: "Pretendard", sans-serif;
+
+  color: #000;
+
+  /* body 4 */
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.logo {
+  width: 100%;
+}
+
+.paragraphs {
+  width: 100%;
+}
+
+/*mobile only*/
+@media (max-width: 833px) {
+  .container {
+    padding: 270px 0 0 0;
+  }
+
+  .inner-container {
+    width: 90%;
+  }
+  .spacing {
+    margin-top: 32px;
+  }
+  .logo {
+    margin: 0 0 270px;
+  }
+
+  .arrow {
+    width: 72px;
+    bottom: 10px;
+  }
+
+  .paragraphs {
+    font-size: 15px;
+    gap: 0px;
+  }
+
+  .poster {
+    margin: 300px 0 310px;
+    width: 100%;
+  }
+
+  .cta {
+    margin-bottom: 40px;
+    /* position: relative;
+    display: inline-block; */
+  }
+
+  .cta .title {
+    /* title 3 */
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .course {
+    margin-bottom: 130px;
+  }
+
+  .grid {
+    padding: 150px 0 300px;
+  }
+
+  .section-name {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  .logos {
+    gap: 30px;
+    height: 80px;
+    margin-bottom: 50px;
+  }
+
+  .kiid {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .designers {
+    gap: 20px;
+    margin-bottom: 150px;
+  }
+
+  .column {
+    font-size: 10px;
+    gap: 15px;
+  }
+
+  .sponsors {
+    gap: 20px;
+    height: 40px;
+    margin-bottom: 150px;
+  }
+
+  .committee {
+    gap: 10px;
+    margin-bottom: 150px;
+  }
+
+  .row .title {
+    font-size: 10px;
+    min-width: 100px;
+    margin-right: 12px;
+  }
+
+  .name {
+    font-size: 10px;
+  }
+  .mainImg {
+    width: 100%;
+  }
+}
+
+/*tablet only*/
+@media (min-width: 834px) and (max-width: 1023px) {
+  .spacing {
+    margin-top: 64px;
+  }
+  .container {
+    padding: 350px 0 0 0;
+  }
+
+  .inner-container {
+    width: 80%;
+  }
+
+  .logo {
+    margin: 0 0 300px;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 60px;
+  }
+
+  .poster {
+    width: 100%;
+  }
+
+  .cta {
+    margin-bottom: 50px;
+    /* position: relative;
+    display: inline-block; */
+    width: 100%;
+  }
+
+  .cta .title {
+    /* title 2 */
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .section-name {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+
+  .logos {
+    gap: 56px;
+    height: 120px;
+    margin-bottom: 80px;
+  }
+
+  .kiid {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .designers {
+    gap: 50px;
+    margin-bottom: 250px;
+  }
+
+  .column {
+    font-size: 16px;
+    gap: 24px;
+  }
+
+  .sponsors {
+    gap: 50px;
+    height: 100px;
+    margin-bottom: 250px;
+  }
+
+  .committee {
+    gap: 20px;
+    margin-bottom: 250px;
+  }
+
+  .row .title {
+    font-size: 16px;
+    min-width: 100px;
+    margin-right: 16px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .grid {
+    padding: 400px 0 400px;
+  }
+  .mainImg {
+    width: 120%;
+  }
+}
+
+/*desktop only*/
+@media (min-width: 1024px) {
+  .container {
+    padding: 118px 0 0 0;
+  }
+
+  .inner-container {
+    width: 60%;
+  }
+
+  .logo {
+    margin: 0 0 170px;
+  }
+
+  .poster {
+    width: 80%;
+  }
+
+  .cta {
+    margin-bottom: 70px;
+    /* position: relative;
+    display: inline-block; */
+    width: 100%;
+  }
+
+  .cta .title {
+    /* title 1 */
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 120px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .arrow {
+    /* position: absolute;
+    bottom: 0;
+    right: 0; */
+    max-width: 100px;
+  }
+
+  .section-name {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 100px;
+  }
+
+  .logos {
+    gap: 70px;
+    height: 150px;
+    margin-bottom: 100px;
+  }
+
+  .kiid {
+    font-size: 25px;
+    margin-bottom: 70px;
+  }
+
+  .designers {
+    gap: 100px;
+    margin-bottom: 300px;
+  }
+
+  .column {
+    font-size: 20px;
+    gap: 30px;
+  }
+
+  .sponsors {
+    gap: 100px;
+    height: 150px;
+    margin-bottom: 275px;
+  }
+
+  .committee {
+    gap: 30px;
+  }
+
+  .row .title {
+    font-size: 20px;
+    min-width: 100px;
+    margin-right: 16px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .grid {
+    padding: 400px 0 500px;
+  }
+}
+
+/*responsive triiger*/
+@media (min-width: 1023px) and (max-width: 1534px) {
+  .cta .title {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1279px) {
+  .cta .title {
+    font-size: 85px;
+  }
+
+  .arrow {
+    width: 72px;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1023px) {
+  .cta .title {
+    font-size: 85px;
+  }
+
+  .arrow {
+    width: 72px;
+    bottom: 25px;
+  }
+  .cta div {
+    width: calc(100% - 72px);
+  }
+}
+
+@media (max-width: 660px) {
+  .cta .title {
+    /* title 3 */
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .arrow {
+    max-width: 72px;
+    bottom: 5px;
+  }
+  .cta div {
+    width: calc(100% - 72px);
+  }
+}
+
+@media (max-width: 560px) {
+  .cta .title {
+    /* title 3 */
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .arrow {
+    max-width: 40px;
+    bottom: 15px;
+  }
+  .cta div {
+    width: calc(100% - 50px);
+  }
+}
+@media (max-width: 450px) {
+  .cta .title {
+    /* title 3 */
+    font-family: "Neue Haas Grotesk Display Pro";
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .arrow {
+    max-width: 40px;
+    bottom: 10px;
+  }
+}
+
+/* @media (min-width: 1023px) and (max-width: 1279px) {
+  .cta .title {
+    font-size: 90px;
+  }
+} */
