@@ -1,0 +1,922 @@
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title content="2023년도 졸업전시 | 고려대학교 산업정보디자인"></title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/_gnb.css" />
+    <link rel="stylesheet" href="./_footer.css" />
+    <link rel="stylesheet" href="./_common.css" />
+    <script src="./index.js"></script>
+    <script src="./_gnb.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap");
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      width: 100vw;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+    "
+  >
+    <div class="gnb-container">
+      <a class="logo-wrapper" href="/2024/kufia/about/">
+        <img class="gnb-logo" src="./../assets/mainLogo.png" />
+      </a>
+      <div class="navigator --desktop">
+        <a class="anchor" href="/2024/kufia/about">ABOUT</a>
+        <a class="anchor --active" href="/2024/kufia/artworks">ARTWORKS</a>
+        <a class="anchor" href="/2024/kufia/artists">ARTISTS</a>
+      </div>
+      <div class="navigator --tablet --mobile">
+        <div class="hamburger" id="hamburger">
+          <div class="hamburger-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="20"
+              viewBox="0 0 22 20"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22 2L0 2V0L22 1.90735e-06V2ZM22 11L0 11V9L22 9V11ZM0 20L22 20V18L0 18V20Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="slideIn --hidden" id="gnb-slideIn">
+          <div class="hamburger-button --close" id="closeBtn">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.07118 5.65683L1.41435 0L0.000139594 1.41421L5.65697 7.07104L0 12.728L1.41421 14.1422L7.07118 8.48526L12.7281 14.1421L14.1423 12.7279L8.4854 7.07104L14.1421 1.41431L12.7279 9.29832e-05L7.07118 5.65683Z"
+                fill="#000000"
+              />
+            </svg>
+          </div>
+          <div class="slideIn-contents">
+            <a
+              class="anchor --side"
+              href="/2024/kiid/about"
+              style="font-size: 36px"
+            >
+              ABOUT
+            </a>
+            <a
+              class="anchor --side"
+              href="/2024/kufia/artworks"
+              style="font-size: 36px"
+            >
+              ARTWORKS
+            </a>
+            <a
+              class="anchor --side"
+              href="/2024/kufia/artists"
+              style="font-size: 36px"
+            >
+              ARTISTS
+            </a>
+            <div class="side-ref">
+              <div style="display: flex">
+                <a
+                  class="anchor_block --ref"
+                  href="http://kiid.korea.ac.kr"
+                  target="_blank"
+                >
+                  KIID GRADSHOW
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div style="display: flex">
+                <a
+                  class="--ref anchor_block"
+                  href="https://www.instagram.com/kufia_2024/"
+                  target="_blank"
+                >
+                  INSTAGRAM
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 10.5375L13.451 5L12.0753 7.66772L16.5693 10.578H2V13.4184H16.5693L12.0753 16.3286L13.451 19L22 13.4588V10.5375Z"
+                      fill="black"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="container">
+      <div class="inner-container">
+        <img
+          class="logo"
+          src="./assets/artworksMainImg.png"
+          alt="fineArtGradExhibition"
+        />
+        <div class="text-container">
+          <div class="desc">
+            깊은 지혜와 뜨거운 마음을 지닌 여러분께, <br />
+            <br />
+          </div>
+          <div class="desc">
+            여러분은 치열한 입시 준비와 학부 생활의 시작을 전례 없는 코로나
+            팬데믹 속에서 치러내며 많은 혼란과 어려움을 겪었습니다. 그러나 그
+            과정에서 누구보다도 빠르게 변화하는 첨단 기술의 발전과 새로운 세상의
+            변화를 경험하며 한층 성장할 수 있었습니다. 이제 그 좌충우돌의 시기를
+            지나 평온한 일상 속에서 새로운 출발을 맞이하게 되었습니다.<br />
+          </div>
+          <div class="desc">
+            앞으로 걸어갈 길에도 예상치 못한 도전들이 여러분을 기다릴 수
+            있습니다. 하지만 그럴 때마다 고려대학교 디자인조형학부에서 함께했던
+            열정 가득한 시간들, 서로 부딪히고 협력하며 성장했던 순간들을
+            떠올리길 바랍니다.<br />
+          </div>
+          <div class="desc">
+            예술은 단순한 표현을 넘어서 사람과 사람을 이어주고, 새로운 관점을
+            창출하며 미래를 상상할 수 있는 힘을 줍니다. 지난 4년간의 예술적 탐색
+            속에서 겪었던 서툴고 미숙했던 순간들조차 가장 소중한
+            세렌디피티(serendipity)로 남아 있을 것입니다. 그 날카롭고 강렬했던
+            젊음의 기억들이 앞으로의 도전에 맞설 용기와 자신감을 줄 것입니다.<br />
+          </div>
+
+          <div class="desc">
+            이번 졸업 전시회는 여러분이 세상에 선보이는 창조적 비전의
+            결실입니다. 그러나 이는 끝이 아닌, 예술적 여정의 새로운 시작입니다.
+            여러분의 앞날이 언제나 밝고 창의적이길 바라며, 성공과 기쁨이
+            함께하길 진심으로 기원합니다.<br />
+          </div>
+          <div class="desc">다시 한번 졸업을 축하드립니다.<br /></div>
+        </div>
+        <div class="prof">Prof. 이예승</div>
+
+        <div class="text-container">
+          <div class="desc">
+            조형예술과의 졸업 전시는 예술을 탐구하며 축적한 지식과 감성을
+            집약하여 발표하는 자리입니다. 현대의 시각환경은 빠르게 변화하고
+            있으며, 우리는 새로운 매체들을 통해 생산되는 수많은 이미지를
+            경험하며 살고 있습니다. 그래서 저는 이 전시를 이해하기 위한 두 개의
+            관점을 제안합니다.<br />
+            <br />
+          </div>
+          <div class="desc">
+            첫째, 미술은 이미지를 만드는 일에 그치지 않고 우리 사회에 대해
+            비판적인 질문을 던지고, 담론을 생산합니다. 여기에 전시된 작품들은
+            작가로서의 정체성과 사회적, 개인적 질문에 대한 답을 찾으려는 노력의
+            산물입니다. 둘째, 그럼에도 불구하고 예술가들은 늘 아름다움을
+            모색합니다. 미술은 기계 매체에 비하면 매우 느리고 비효율적이고
+            방식으로 이미지를 생산하지만, 한 개인이 경험한 세밀한 감수성으로
+            칠해져서 여전히 인간적입니다. 그래서 미술은 여전히 우리의 삶을
+            돌아보게 만드는 보편적인 가치와 정서적인 호소력을 가지고
+            있습니다.<br />
+          </div>
+          <div class="desc"><br /></div>
+          <div class="desc">
+            이 전시를 준비하는 1년 동안 학생들의 주제는 개인의 문제의식에서
+            출발했지만, 점차 밖을 향해서 열리고, 자기 고백에 머물지 않고, 미술의
+            형식을 갖추어 성숙해졌습니다. 우리 학생들이 독창적인 예술가, 건강한
+            공동체의 일원, 그리고 무엇보다 자신의 삶의 주인이 되기를
+            응원합니다.<br />
+          </div>
+        </div>
+        <div class="prof">Prof. 서동욱</div>
+
+        <div class="grid">
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/GeonheeKim">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(김건희)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">김건희</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">김건희</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/YounghoKim">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(김영호)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">김영호</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">김영호</p>
+          </div>
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/YujinKim">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(김유진)_썸네일.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">김유진</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">김유진</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/EunjungKim">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(김은정)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">김은정</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">김은정</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/JeongminKim">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(김정민)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">김정민</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">김정민</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/JuheeKim">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(김주희)_썸네일.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">김주희</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">김주희</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/Rocio">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(로시오)_썸네일.jpeg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">로시오</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">로시오</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/YounghoKim">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(류승아)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">류승아</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">류승아</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/JiseungRyu">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(류지승)_썸네일.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">류지승</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">류지승</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/SeoyoungPark">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(박서영)_썸네일.jpeg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">박서영</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">박서영</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/JunhyeokBae">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(배준혁)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">배준혁</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">배준혁</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/JungwooShin">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(신정우)_썸네일.jpeg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">신정우</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">신정우</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/HeewonShin">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(신희원)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">신희원</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">신희원</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/SeonyuLee">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(이선유)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">이선유</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">이선유</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/SeungwonLee">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(이승원)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">이승원</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">이승원</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/ChaeeunLee">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(이채은)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">이채은</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">이채은</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/HyunjeLee">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(이현제)_썸네일.png"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">이현제</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">이현제</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/SeokangJeong">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(정서강)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">정서강</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">정서강</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/YujinChung">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(정유진)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">정유진</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">정유진</p>
+          </div>
+
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/SoeunChang">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(창소은)_썸네일.jpeg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">창소은</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">창소은</p>
+          </div>
+          <div class="cardWrapper">
+            <a class="card" href="/2024/kufia/artworks/JuriChae">
+              <img
+                class="project-thumb"
+                src="./assets/thumbnail/(채주리)_썸네일.jpg"
+                alt="BOUNO"
+              />
+              <img
+                class="project-gradient"
+                src="./assets/grad.png"
+                alt="Gradient"
+              />
+              <div class="project-title --hidden">채주리</div>
+              <div class="project-pointer --hidden">
+                <svg
+                  class="project-arrow"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M39.2008 18.2942L23.6416 8.0498L21.1379 12.9851L29.3169 18.369H2.80078V23.6238H29.3169L21.1379 29.0077L23.6416 33.9498L39.2008 23.6986V18.2942Z"
+                    fill="#79E1FF"
+                  />
+                </svg>
+              </div>
+            </a>
+            <p class="project-title-mobile">채주리</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-wrapper">
+        <div class="copyright">
+          Copyright 2023. KIID POST all rights reserved.
+        </div>
+        <div class="footer-logos">
+          <div class="footer-unis">
+            <img
+              class="footer-uni --desktop --tablet"
+              src="./../about/_uni.png"
+            />
+            <img class="footer-uni --mobile" src="./../about/_gray-korea.png" />
+            <img class="footer-uni --mobile" src="./../about/_gray-kiid.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
